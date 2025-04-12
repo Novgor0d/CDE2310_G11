@@ -1,0 +1,37 @@
+[2.470s] Invoking command in '/home/vihaan/ros2_ws/src/backup_explore': PYTHONPATH=/home/vihaan/ros2_ws/src/build/backup_explore/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/backup_explore/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/backup_explore build --build-base /home/vihaan/ros2_ws/src/build/backup_explore/build install --record /home/vihaan/ros2_ws/src/build/backup_explore/install.log --single-version-externally-managed install_data
+[2.771s] running egg_info
+[2.772s] creating ../build/backup_explore/backup_explore.egg-info
+[2.772s] writing ../build/backup_explore/backup_explore.egg-info/PKG-INFO
+[2.773s] writing dependency_links to ../build/backup_explore/backup_explore.egg-info/dependency_links.txt
+[2.773s] writing entry points to ../build/backup_explore/backup_explore.egg-info/entry_points.txt
+[2.773s] writing requirements to ../build/backup_explore/backup_explore.egg-info/requires.txt
+[2.773s] writing top-level names to ../build/backup_explore/backup_explore.egg-info/top_level.txt
+[2.773s] writing manifest file '../build/backup_explore/backup_explore.egg-info/SOURCES.txt'
+[2.775s] reading manifest file '../build/backup_explore/backup_explore.egg-info/SOURCES.txt'
+[2.776s] writing manifest file '../build/backup_explore/backup_explore.egg-info/SOURCES.txt'
+[2.776s] running build
+[2.776s] running build_py
+[2.776s] creating /home/vihaan/ros2_ws/src/build/backup_explore/build
+[2.776s] creating /home/vihaan/ros2_ws/src/build/backup_explore/build/lib
+[2.777s] creating /home/vihaan/ros2_ws/src/build/backup_explore/build/lib/backup_explore
+[2.777s] copying backup_explore/explore.py -> /home/vihaan/ros2_ws/src/build/backup_explore/build/lib/backup_explore
+[2.777s] copying backup_explore/__init__.py -> /home/vihaan/ros2_ws/src/build/backup_explore/build/lib/backup_explore
+[2.778s] running install
+[2.778s] running install_lib
+[2.779s] creating /home/vihaan/ros2_ws/src/install/backup_explore/lib/python3.10/site-packages/backup_explore
+[2.779s] copying /home/vihaan/ros2_ws/src/build/backup_explore/build/lib/backup_explore/explore.py -> /home/vihaan/ros2_ws/src/install/backup_explore/lib/python3.10/site-packages/backup_explore
+[2.779s] copying /home/vihaan/ros2_ws/src/build/backup_explore/build/lib/backup_explore/__init__.py -> /home/vihaan/ros2_ws/src/install/backup_explore/lib/python3.10/site-packages/backup_explore
+[2.780s] byte-compiling /home/vihaan/ros2_ws/src/install/backup_explore/lib/python3.10/site-packages/backup_explore/explore.py to explore.cpython-310.pyc
+[2.781s] byte-compiling /home/vihaan/ros2_ws/src/install/backup_explore/lib/python3.10/site-packages/backup_explore/__init__.py to __init__.cpython-310.pyc
+[2.781s] running install_data
+[2.781s] creating /home/vihaan/ros2_ws/src/install/backup_explore/share/ament_index
+[2.781s] creating /home/vihaan/ros2_ws/src/install/backup_explore/share/ament_index/resource_index
+[2.781s] creating /home/vihaan/ros2_ws/src/install/backup_explore/share/ament_index/resource_index/packages
+[2.782s] copying resource/backup_explore -> /home/vihaan/ros2_ws/src/install/backup_explore/share/ament_index/resource_index/packages
+[2.782s] copying package.xml -> /home/vihaan/ros2_ws/src/install/backup_explore/share/backup_explore
+[2.782s] running install_egg_info
+[2.783s] Copying ../build/backup_explore/backup_explore.egg-info to /home/vihaan/ros2_ws/src/install/backup_explore/lib/python3.10/site-packages/backup_explore-0.0.0-py3.10.egg-info
+[2.784s] running install_scripts
+[2.809s] Installing backup script to /home/vihaan/ros2_ws/src/install/backup_explore/lib/backup_explore
+[2.810s] writing list of installed files to '/home/vihaan/ros2_ws/src/build/backup_explore/install.log'
+[2.886s] Invoked command in '/home/vihaan/ros2_ws/src/backup_explore' returned '0': PYTHONPATH=/home/vihaan/ros2_ws/src/build/backup_explore/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/backup_explore/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/backup_explore build --build-base /home/vihaan/ros2_ws/src/build/backup_explore/build install --record /home/vihaan/ros2_ws/src/build/backup_explore/install.log --single-version-externally-managed install_data

@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/fire_flare/fire_flare.egg-info/PKG-INFO
+writing dependency_links to ../../build/fire_flare/fire_flare.egg-info/dependency_links.txt
+writing entry points to ../../build/fire_flare/fire_flare.egg-info/entry_points.txt
+writing requirements to ../../build/fire_flare/fire_flare.egg-info/requires.txt
+writing top-level names to ../../build/fire_flare/fire_flare.egg-info/top_level.txt
+reading manifest file '../../build/fire_flare/fire_flare.egg-info/SOURCES.txt'
+writing manifest file '../../build/fire_flare/fire_flare.egg-info/SOURCES.txt'
+running build
+running build_py
+copying fire_flare/motors.py -> /home/vihaan/ros2_ws/build/fire_flare/build/lib/fire_flare
+running install
+running install_lib
+copying /home/vihaan/ros2_ws/build/fire_flare/build/lib/fire_flare/motors.py -> /home/vihaan/ros2_ws/install/fire_flare/lib/python3.10/site-packages/fire_flare
+byte-compiling /home/vihaan/ros2_ws/install/fire_flare/lib/python3.10/site-packages/fire_flare/motors.py to motors.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/vihaan/ros2_ws/install/fire_flare/lib/python3.10/site-packages/fire_flare-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/fire_flare/fire_flare.egg-info to /home/vihaan/ros2_ws/install/fire_flare/lib/python3.10/site-packages/fire_flare-0.0.0-py3.10.egg-info
+running install_scripts
+Installing motor script to /home/vihaan/ros2_ws/install/fire_flare/lib/fire_flare
+writing list of installed files to '/home/vihaan/ros2_ws/build/fire_flare/install.log'

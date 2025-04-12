@@ -1,0 +1,269 @@
+[0.081s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.081s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x76c2e3284a30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x76c2e3284370>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x76c2e3284370>>)
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.202s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/vihaan/ros2_ws/src'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(custom_explorer) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(custom_explorer) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(custom_explorer) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(custom_explorer) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(custom_explorer) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(custom_explorer) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(custom_explorer) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(custom_explorer) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(custom_explorer) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'custom_explorer' with type 'ros.ament_python' and name 'custom_explorer'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(fire_flare) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(fire_flare) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(fire_flare) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(fire_flare) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(fire_flare) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(fire_flare) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(fire_flare) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(fire_flare) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(fire_flare) by extension 'ros'
+[0.213s] DEBUG:colcon.colcon_core.package_identification:Package 'fire_flare' with type 'ros.ament_python' and name 'fire_flare'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_config) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_config) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_config) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_config) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_config) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_config) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_config) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(robot_config) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(robot_config) by extension 'ros'
+[0.214s] DEBUG:colcon.colcon_core.package_identification:Package 'robot_config' with type 'ros.ament_python' and name 'robot_config'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(thermal_explorer) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(thermal_explorer) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(thermal_explorer) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(thermal_explorer) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(thermal_explorer) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(thermal_explorer) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(thermal_explorer) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(thermal_explorer) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(thermal_explorer) by extension 'ros'
+[0.214s] DEBUG:colcon.colcon_core.package_identification:Package 'thermal_explorer' with type 'ros.ament_python' and name 'thermal_explorer'
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.241s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/vihaan/ros2_ws/install
+[0.242s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 29 installed packages in /home/vihaan/install
+[0.243s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/vihaan/colcon_ws/install
+[0.243s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/vihaan/colcon_ws/src/install
+[0.244s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/vihaan/colcon_ws/src/auto_nav/auto_nav/install
+[0.244s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 13 installed packages in /home/vihaan/ws/install
+[0.245s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/vihaan/turtlebot3_ws/install
+[0.247s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 334 installed packages in /opt/ros/humble
+[0.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'custom_explorer' build argument 'cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'custom_explorer' build argument 'cmake_target' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'custom_explorer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'custom_explorer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'custom_explorer' build argument 'cmake_clean_first' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'custom_explorer' build argument 'cmake_force_configure' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'custom_explorer' build argument 'ament_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'custom_explorer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'custom_explorer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.280s] DEBUG:colcon.colcon_core.verb:Building package 'custom_explorer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vihaan/ros2_ws/src/build/custom_explorer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vihaan/ros2_ws/src/install/custom_explorer', 'merge_install': False, 'path': '/home/vihaan/ros2_ws/src/custom_explorer', 'symlink_install': False, 'test_result_base': None}
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'fire_flare' build argument 'cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'fire_flare' build argument 'cmake_target' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'fire_flare' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'fire_flare' build argument 'cmake_clean_cache' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'fire_flare' build argument 'cmake_clean_first' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'fire_flare' build argument 'cmake_force_configure' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'fire_flare' build argument 'ament_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'fire_flare' build argument 'catkin_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'fire_flare' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.280s] DEBUG:colcon.colcon_core.verb:Building package 'fire_flare' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vihaan/ros2_ws/src/build/fire_flare', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vihaan/ros2_ws/src/install/fire_flare', 'merge_install': False, 'path': '/home/vihaan/ros2_ws/src/fire_flare', 'symlink_install': False, 'test_result_base': None}
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'cmake_target' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.281s] DEBUG:colcon.colcon_core.verb:Building package 'robot_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vihaan/ros2_ws/src/build/robot_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vihaan/ros2_ws/src/install/robot_config', 'merge_install': False, 'path': '/home/vihaan/ros2_ws/src/robot_config', 'symlink_install': False, 'test_result_base': None}
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'thermal_explorer' build argument 'cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'thermal_explorer' build argument 'cmake_target' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'thermal_explorer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'thermal_explorer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'thermal_explorer' build argument 'cmake_clean_first' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'thermal_explorer' build argument 'cmake_force_configure' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'thermal_explorer' build argument 'ament_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'thermal_explorer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'thermal_explorer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.281s] DEBUG:colcon.colcon_core.verb:Building package 'thermal_explorer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vihaan/ros2_ws/src/build/thermal_explorer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vihaan/ros2_ws/src/install/thermal_explorer', 'merge_install': False, 'path': '/home/vihaan/ros2_ws/src/thermal_explorer', 'symlink_install': False, 'test_result_base': None}
+[0.281s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.282s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.282s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/vihaan/ros2_ws/src/custom_explorer' with build type 'ament_python'
+[0.282s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_explorer', 'ament_prefix_path')
+[0.284s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.284s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/custom_explorer/share/custom_explorer/hook/ament_prefix_path.ps1'
+[0.285s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vihaan/ros2_ws/src/install/custom_explorer/share/custom_explorer/hook/ament_prefix_path.dsv'
+[0.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/custom_explorer/share/custom_explorer/hook/ament_prefix_path.sh'
+[0.285s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.285s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.292s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/vihaan/ros2_ws/src/fire_flare' with build type 'ament_python'
+[0.292s] Level 1:colcon.colcon_core.shell:create_environment_hook('fire_flare', 'ament_prefix_path')
+[0.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/fire_flare/share/fire_flare/hook/ament_prefix_path.ps1'
+[0.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vihaan/ros2_ws/src/install/fire_flare/share/fire_flare/hook/ament_prefix_path.dsv'
+[0.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/fire_flare/share/fire_flare/hook/ament_prefix_path.sh'
+[0.293s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.293s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.300s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/vihaan/ros2_ws/src/robot_config' with build type 'ament_python'
+[0.300s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_config', 'ament_prefix_path')
+[0.300s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/hook/ament_prefix_path.ps1'
+[0.301s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/hook/ament_prefix_path.dsv'
+[0.301s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/hook/ament_prefix_path.sh'
+[0.302s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.302s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.308s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/vihaan/ros2_ws/src/thermal_explorer' with build type 'ament_python'
+[0.308s] Level 1:colcon.colcon_core.shell:create_environment_hook('thermal_explorer', 'ament_prefix_path')
+[0.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/thermal_explorer/share/thermal_explorer/hook/ament_prefix_path.ps1'
+[0.308s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vihaan/ros2_ws/src/install/thermal_explorer/share/thermal_explorer/hook/ament_prefix_path.dsv'
+[0.309s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/thermal_explorer/share/thermal_explorer/hook/ament_prefix_path.sh'
+[0.309s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.309s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.513s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/vihaan/ros2_ws/src/custom_explorer'
+[0.513s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.513s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.714s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/vihaan/ros2_ws/src/fire_flare'
+[0.714s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.714s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.918s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/vihaan/ros2_ws/src/robot_config'
+[0.918s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.918s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.120s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/vihaan/ros2_ws/src/thermal_explorer'
+[1.120s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.120s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vihaan/ros2_ws/src/robot_config': PYTHONPATH=/home/vihaan/ros2_ws/src/build/robot_config/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/robot_config/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/robot_config build --build-base /home/vihaan/ros2_ws/src/build/robot_config/build install --record /home/vihaan/ros2_ws/src/build/robot_config/install.log --single-version-externally-managed install_data
+[1.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vihaan/ros2_ws/src/custom_explorer': PYTHONPATH=/home/vihaan/ros2_ws/src/build/custom_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/custom_explorer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/custom_explorer build --build-base /home/vihaan/ros2_ws/src/build/custom_explorer/build install --record /home/vihaan/ros2_ws/src/build/custom_explorer/install.log --single-version-externally-managed install_data
+[1.440s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vihaan/ros2_ws/src/fire_flare': PYTHONPATH=/home/vihaan/ros2_ws/src/build/fire_flare/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/fire_flare/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/fire_flare build --build-base /home/vihaan/ros2_ws/src/build/fire_flare/build install --record /home/vihaan/ros2_ws/src/build/fire_flare/install.log --single-version-externally-managed install_data
+[1.448s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vihaan/ros2_ws/src/thermal_explorer': PYTHONPATH=/home/vihaan/ros2_ws/src/build/thermal_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/thermal_explorer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/thermal_explorer build --build-base /home/vihaan/ros2_ws/src/build/thermal_explorer/build install --record /home/vihaan/ros2_ws/src/build/thermal_explorer/install.log --single-version-externally-managed install_data
+[1.698s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vihaan/ros2_ws/src/robot_config' returned '0': PYTHONPATH=/home/vihaan/ros2_ws/src/build/robot_config/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/robot_config/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/robot_config build --build-base /home/vihaan/ros2_ws/src/build/robot_config/build install --record /home/vihaan/ros2_ws/src/build/robot_config/install.log --single-version-externally-managed install_data
+[1.700s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/robot_config' for CMake module files
+[1.700s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/robot_config' for CMake config files
+[1.700s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/robot_config/lib'
+[1.701s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/robot_config/bin'
+[1.701s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/robot_config/lib/pkgconfig/robot_config.pc'
+[1.701s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/robot_config/lib/python3.10/site-packages'
+[1.701s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_config', 'pythonpath')
+[1.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/hook/pythonpath.ps1'
+[1.701s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/hook/pythonpath.dsv'
+[1.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/hook/pythonpath.sh'
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/robot_config/bin'
+[1.703s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_config)
+[1.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/package.ps1'
+[1.703s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/package.dsv'
+[1.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/package.sh'
+[1.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/package.bash'
+[1.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/package.zsh'
+[1.705s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vihaan/ros2_ws/src/install/robot_config/share/colcon-core/packages/robot_config)
+[1.710s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/fire_flare' for CMake module files
+[1.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vihaan/ros2_ws/src/fire_flare' returned '0': PYTHONPATH=/home/vihaan/ros2_ws/src/build/fire_flare/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/fire_flare/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/fire_flare build --build-base /home/vihaan/ros2_ws/src/build/fire_flare/build install --record /home/vihaan/ros2_ws/src/build/fire_flare/install.log --single-version-externally-managed install_data
+[1.711s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/fire_flare' for CMake config files
+[1.711s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/fire_flare/lib'
+[1.711s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/fire_flare/bin'
+[1.711s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/fire_flare/lib/pkgconfig/fire_flare.pc'
+[1.711s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/fire_flare/lib/python3.10/site-packages'
+[1.711s] Level 1:colcon.colcon_core.shell:create_environment_hook('fire_flare', 'pythonpath')
+[1.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/fire_flare/share/fire_flare/hook/pythonpath.ps1'
+[1.712s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vihaan/ros2_ws/src/install/fire_flare/share/fire_flare/hook/pythonpath.dsv'
+[1.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/fire_flare/share/fire_flare/hook/pythonpath.sh'
+[1.713s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/fire_flare/bin'
+[1.713s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fire_flare)
+[1.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/fire_flare/share/fire_flare/package.ps1'
+[1.714s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vihaan/ros2_ws/src/install/fire_flare/share/fire_flare/package.dsv'
+[1.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/fire_flare/share/fire_flare/package.sh'
+[1.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/fire_flare/share/fire_flare/package.bash'
+[1.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/fire_flare/share/fire_flare/package.zsh'
+[1.715s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vihaan/ros2_ws/src/install/fire_flare/share/colcon-core/packages/fire_flare)
+[1.716s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/custom_explorer' for CMake module files
+[1.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vihaan/ros2_ws/src/custom_explorer' returned '0': PYTHONPATH=/home/vihaan/ros2_ws/src/build/custom_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/custom_explorer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/custom_explorer build --build-base /home/vihaan/ros2_ws/src/build/custom_explorer/build install --record /home/vihaan/ros2_ws/src/build/custom_explorer/install.log --single-version-externally-managed install_data
+[1.717s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/custom_explorer' for CMake config files
+[1.717s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/custom_explorer/lib'
+[1.717s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/custom_explorer/bin'
+[1.717s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/custom_explorer/lib/pkgconfig/custom_explorer.pc'
+[1.717s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/custom_explorer/lib/python3.10/site-packages'
+[1.717s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_explorer', 'pythonpath')
+[1.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/custom_explorer/share/custom_explorer/hook/pythonpath.ps1'
+[1.718s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vihaan/ros2_ws/src/install/custom_explorer/share/custom_explorer/hook/pythonpath.dsv'
+[1.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/custom_explorer/share/custom_explorer/hook/pythonpath.sh'
+[1.718s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/custom_explorer/bin'
+[1.719s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_explorer)
+[1.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/custom_explorer/share/custom_explorer/package.ps1'
+[1.719s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vihaan/ros2_ws/src/install/custom_explorer/share/custom_explorer/package.dsv'
+[1.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/custom_explorer/share/custom_explorer/package.sh'
+[1.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/custom_explorer/share/custom_explorer/package.bash'
+[1.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/custom_explorer/share/custom_explorer/package.zsh'
+[1.720s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vihaan/ros2_ws/src/install/custom_explorer/share/colcon-core/packages/custom_explorer)
+[1.723s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/thermal_explorer' for CMake module files
+[1.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vihaan/ros2_ws/src/thermal_explorer' returned '0': PYTHONPATH=/home/vihaan/ros2_ws/src/build/thermal_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/thermal_explorer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/thermal_explorer build --build-base /home/vihaan/ros2_ws/src/build/thermal_explorer/build install --record /home/vihaan/ros2_ws/src/build/thermal_explorer/install.log --single-version-externally-managed install_data
+[1.724s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/thermal_explorer' for CMake config files
+[1.724s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/thermal_explorer/lib'
+[1.724s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/thermal_explorer/bin'
+[1.724s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/thermal_explorer/lib/pkgconfig/thermal_explorer.pc'
+[1.724s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/thermal_explorer/lib/python3.10/site-packages'
+[1.724s] Level 1:colcon.colcon_core.shell:create_environment_hook('thermal_explorer', 'pythonpath')
+[1.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/thermal_explorer/share/thermal_explorer/hook/pythonpath.ps1'
+[1.725s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vihaan/ros2_ws/src/install/thermal_explorer/share/thermal_explorer/hook/pythonpath.dsv'
+[1.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vihaan/ros2_ws/src/install/thermal_explorer/share/thermal_explorer/hook/pythonpath.sh'
+[1.725s] Level 1:colcon.colcon_core.environment:checking '/home/vihaan/ros2_ws/src/install/thermal_explorer/bin'
+[1.725s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(thermal_explorer)
+[1.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/thermal_explorer/share/thermal_explorer/package.ps1'
+[1.726s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vihaan/ros2_ws/src/install/thermal_explorer/share/thermal_explorer/package.dsv'
+[1.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/thermal_explorer/share/thermal_explorer/package.sh'
+[1.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/thermal_explorer/share/thermal_explorer/package.bash'
+[1.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/vihaan/ros2_ws/src/install/thermal_explorer/share/thermal_explorer/package.zsh'
+[1.727s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vihaan/ros2_ws/src/install/thermal_explorer/share/colcon-core/packages/thermal_explorer)
+[1.727s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.727s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.727s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.727s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.732s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.732s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.732s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.743s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.743s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vihaan/ros2_ws/src/install/local_setup.ps1'
+[1.744s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vihaan/ros2_ws/src/install/_local_setup_util_ps1.py'
+[1.745s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vihaan/ros2_ws/src/install/setup.ps1'
+[1.747s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vihaan/ros2_ws/src/install/local_setup.sh'
+[1.747s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vihaan/ros2_ws/src/install/_local_setup_util_sh.py'
+[1.748s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vihaan/ros2_ws/src/install/setup.sh'
+[1.750s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vihaan/ros2_ws/src/install/local_setup.bash'
+[1.751s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vihaan/ros2_ws/src/install/setup.bash'
+[1.753s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vihaan/ros2_ws/src/install/local_setup.zsh'
+[1.754s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vihaan/ros2_ws/src/install/setup.zsh'

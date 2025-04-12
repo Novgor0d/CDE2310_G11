@@ -1,0 +1,35 @@
+running egg_info
+creating ../build/robot_config/robot_config.egg-info
+writing ../build/robot_config/robot_config.egg-info/PKG-INFO
+writing dependency_links to ../build/robot_config/robot_config.egg-info/dependency_links.txt
+writing entry points to ../build/robot_config/robot_config.egg-info/entry_points.txt
+writing requirements to ../build/robot_config/robot_config.egg-info/requires.txt
+writing top-level names to ../build/robot_config/robot_config.egg-info/top_level.txt
+writing manifest file '../build/robot_config/robot_config.egg-info/SOURCES.txt'
+reading manifest file '../build/robot_config/robot_config.egg-info/SOURCES.txt'
+writing manifest file '../build/robot_config/robot_config.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/vihaan/ros2_ws/src/build/robot_config/build
+creating /home/vihaan/ros2_ws/src/build/robot_config/build/lib
+creating /home/vihaan/ros2_ws/src/build/robot_config/build/lib/robot_config
+copying robot_config/__init__.py -> /home/vihaan/ros2_ws/src/build/robot_config/build/lib/robot_config
+running install
+running install_lib
+creating /home/vihaan/ros2_ws/src/install/robot_config/lib/python3.10/site-packages/robot_config
+copying /home/vihaan/ros2_ws/src/build/robot_config/build/lib/robot_config/__init__.py -> /home/vihaan/ros2_ws/src/install/robot_config/lib/python3.10/site-packages/robot_config
+byte-compiling /home/vihaan/ros2_ws/src/install/robot_config/lib/python3.10/site-packages/robot_config/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/launch
+copying launch/nav2_launch.py -> /home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/launch
+creating /home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/robot_config
+copying robot_config/nav2_params.yaml -> /home/vihaan/ros2_ws/src/install/robot_config/share/robot_config/robot_config
+creating /home/vihaan/ros2_ws/src/install/robot_config/share/ament_index
+creating /home/vihaan/ros2_ws/src/install/robot_config/share/ament_index/resource_index
+creating /home/vihaan/ros2_ws/src/install/robot_config/share/ament_index/resource_index/packages
+copying resource/robot_config -> /home/vihaan/ros2_ws/src/install/robot_config/share/ament_index/resource_index/packages
+copying package.xml -> /home/vihaan/ros2_ws/src/install/robot_config/share/robot_config
+running install_egg_info
+Copying ../build/robot_config/robot_config.egg-info to /home/vihaan/ros2_ws/src/install/robot_config/lib/python3.10/site-packages/robot_config-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/vihaan/ros2_ws/src/build/robot_config/install.log'

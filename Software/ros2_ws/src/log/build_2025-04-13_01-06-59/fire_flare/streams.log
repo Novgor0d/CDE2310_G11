@@ -1,0 +1,21 @@
+[1.843s] Invoking command in '/home/vihaan/ros2_ws/src/fire_flare': PYTHONPATH=/home/vihaan/ros2_ws/src/build/fire_flare/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/fire_flare/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/fire_flare build --build-base /home/vihaan/ros2_ws/src/build/fire_flare/build install --record /home/vihaan/ros2_ws/src/build/fire_flare/install.log --single-version-externally-managed install_data
+[2.202s] running egg_info
+[2.203s] writing ../build/fire_flare/fire_flare.egg-info/PKG-INFO
+[2.203s] writing dependency_links to ../build/fire_flare/fire_flare.egg-info/dependency_links.txt
+[2.204s] writing entry points to ../build/fire_flare/fire_flare.egg-info/entry_points.txt
+[2.204s] writing requirements to ../build/fire_flare/fire_flare.egg-info/requires.txt
+[2.204s] writing top-level names to ../build/fire_flare/fire_flare.egg-info/top_level.txt
+[2.207s] reading manifest file '../build/fire_flare/fire_flare.egg-info/SOURCES.txt'
+[2.208s] writing manifest file '../build/fire_flare/fire_flare.egg-info/SOURCES.txt'
+[2.208s] running build
+[2.209s] running build_py
+[2.209s] running install
+[2.209s] running install_lib
+[2.211s] running install_data
+[2.211s] running install_egg_info
+[2.214s] removing '/home/vihaan/ros2_ws/src/install/fire_flare/lib/python3.10/site-packages/fire_flare-0.0.0-py3.10.egg-info' (and everything under it)
+[2.215s] Copying ../build/fire_flare/fire_flare.egg-info to /home/vihaan/ros2_ws/src/install/fire_flare/lib/python3.10/site-packages/fire_flare-0.0.0-py3.10.egg-info
+[2.216s] running install_scripts
+[2.251s] Installing motor script to /home/vihaan/ros2_ws/src/install/fire_flare/lib/fire_flare
+[2.252s] writing list of installed files to '/home/vihaan/ros2_ws/src/build/fire_flare/install.log'
+[2.310s] Invoked command in '/home/vihaan/ros2_ws/src/fire_flare' returned '0': PYTHONPATH=/home/vihaan/ros2_ws/src/build/fire_flare/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/fire_flare/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/fire_flare build --build-base /home/vihaan/ros2_ws/src/build/fire_flare/build install --record /home/vihaan/ros2_ws/src/build/fire_flare/install.log --single-version-externally-managed install_data

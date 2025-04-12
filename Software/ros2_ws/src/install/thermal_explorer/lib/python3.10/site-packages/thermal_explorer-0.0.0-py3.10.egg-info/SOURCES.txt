@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../build/thermal_explorer/thermal_explorer.egg-info/PKG-INFO
+../build/thermal_explorer/thermal_explorer.egg-info/SOURCES.txt
+../build/thermal_explorer/thermal_explorer.egg-info/dependency_links.txt
+../build/thermal_explorer/thermal_explorer.egg-info/entry_points.txt
+../build/thermal_explorer/thermal_explorer.egg-info/requires.txt
+../build/thermal_explorer/thermal_explorer.egg-info/top_level.txt
+../build/thermal_explorer/thermal_explorer.egg-info/zip-safe
+resource/thermal_explorer
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+thermal_explorer/__init__.py
+thermal_explorer/thermal_scan.py

@@ -1,0 +1,6 @@
+source;share/fire_flare/hook/pythonpath.ps1
+source;share/fire_flare/hook/pythonpath.dsv
+source;share/fire_flare/hook/pythonpath.sh
+source;share/fire_flare/hook/ament_prefix_path.ps1
+source;share/fire_flare/hook/ament_prefix_path.dsv
+source;share/fire_flare/hook/ament_prefix_path.sh

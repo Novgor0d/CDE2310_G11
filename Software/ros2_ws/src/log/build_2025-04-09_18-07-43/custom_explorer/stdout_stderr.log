@@ -1,0 +1,23 @@
+running egg_info
+writing ../build/custom_explorer/custom_explorer.egg-info/PKG-INFO
+writing dependency_links to ../build/custom_explorer/custom_explorer.egg-info/dependency_links.txt
+writing entry points to ../build/custom_explorer/custom_explorer.egg-info/entry_points.txt
+writing requirements to ../build/custom_explorer/custom_explorer.egg-info/requires.txt
+writing top-level names to ../build/custom_explorer/custom_explorer.egg-info/top_level.txt
+reading manifest file '../build/custom_explorer/custom_explorer.egg-info/SOURCES.txt'
+writing manifest file '../build/custom_explorer/custom_explorer.egg-info/SOURCES.txt'
+running build
+running build_py
+copying custom_explorer/explorer.py -> /home/vihaan/ros2_ws/src/build/custom_explorer/build/lib/custom_explorer
+running install
+running install_lib
+copying /home/vihaan/ros2_ws/src/build/custom_explorer/build/lib/custom_explorer/explorer.py -> /home/vihaan/ros2_ws/src/install/custom_explorer/lib/python3.10/site-packages/custom_explorer
+byte-compiling /home/vihaan/ros2_ws/src/install/custom_explorer/lib/python3.10/site-packages/custom_explorer/explorer.py to explorer.cpython-310.pyc
+running install_data
+Sorry: IndentationError: unindent does not match any outer indentation level (explorer.py, line 42)
+running install_egg_info
+removing '/home/vihaan/ros2_ws/src/install/custom_explorer/lib/python3.10/site-packages/custom_explorer-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/custom_explorer/custom_explorer.egg-info to /home/vihaan/ros2_ws/src/install/custom_explorer/lib/python3.10/site-packages/custom_explorer-0.0.0-py3.10.egg-info
+running install_scripts
+Installing explorer script to /home/vihaan/ros2_ws/src/install/custom_explorer/lib/custom_explorer
+writing list of installed files to '/home/vihaan/ros2_ws/src/build/custom_explorer/install.log'

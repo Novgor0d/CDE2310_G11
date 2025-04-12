@@ -3,6 +3,8 @@ import busio
 import board
 import adafruit_amg88xx
 import RPi.GPIO as GPIO 
+import subprocess
+
 
 # Initialize I2C bus
 i2c_bus = busio.I2C(board.SCL, board.SDA)
@@ -31,7 +33,9 @@ p = GPIO.PWM(servo_pin, 50)
 # Start the servo at 90 degrees (neutral position) 
 p.start(7.5) 
 
+#angles for heat sweep
 angles = [30, 90, 120]
+flag = 0
 
 def set_servo_angle(angles): 
     for angle in angles:
@@ -44,16 +48,22 @@ def set_servo_angle(angles):
             for temp in row:
                 if temp > THRESHOLD:
                     count += 1
-        
-            print(["{:.2f}".format(temp) for temp in row])  # Format for better readability
-        print("\n" + "-" * 40)  # Separator for clarity
+
+           # print(["{:.2f}".format(temp) for temp in row])  # Format for better readability
+        #print("\n" + "-" * 40)  # Separator for clarity
         if count > 40:
-            print("Fire Flare")
+#            print("Fire Flare")
+            flag = 1
+            break
+
 try:
       set_servo_angle(angles)
-
+      if flag == 1:
+#          subprocess.run(["python3", "Motor_Test.py"])
+           print(1)
 except KeyboardInterrupt:
     print("Exiting...")
+    
 
 finally:
     p.stop()

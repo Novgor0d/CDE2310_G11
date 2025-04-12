@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/backup_explore/backup_explore.egg-info
+writing ../../build/backup_explore/backup_explore.egg-info/PKG-INFO
+writing dependency_links to ../../build/backup_explore/backup_explore.egg-info/dependency_links.txt
+writing entry points to ../../build/backup_explore/backup_explore.egg-info/entry_points.txt
+writing requirements to ../../build/backup_explore/backup_explore.egg-info/requires.txt
+writing top-level names to ../../build/backup_explore/backup_explore.egg-info/top_level.txt
+writing manifest file '../../build/backup_explore/backup_explore.egg-info/SOURCES.txt'
+reading manifest file '../../build/backup_explore/backup_explore.egg-info/SOURCES.txt'
+writing manifest file '../../build/backup_explore/backup_explore.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/vihaan/ros2_ws/build/backup_explore/build
+creating /home/vihaan/ros2_ws/build/backup_explore/build/lib
+creating /home/vihaan/ros2_ws/build/backup_explore/build/lib/backup_explore
+copying backup_explore/explore.py -> /home/vihaan/ros2_ws/build/backup_explore/build/lib/backup_explore
+copying backup_explore/__init__.py -> /home/vihaan/ros2_ws/build/backup_explore/build/lib/backup_explore
+running install
+running install_lib
+creating /home/vihaan/ros2_ws/install/backup_explore/lib/python3.10/site-packages/backup_explore
+copying /home/vihaan/ros2_ws/build/backup_explore/build/lib/backup_explore/explore.py -> /home/vihaan/ros2_ws/install/backup_explore/lib/python3.10/site-packages/backup_explore
+copying /home/vihaan/ros2_ws/build/backup_explore/build/lib/backup_explore/__init__.py -> /home/vihaan/ros2_ws/install/backup_explore/lib/python3.10/site-packages/backup_explore
+byte-compiling /home/vihaan/ros2_ws/install/backup_explore/lib/python3.10/site-packages/backup_explore/explore.py to explore.cpython-310.pyc
+byte-compiling /home/vihaan/ros2_ws/install/backup_explore/lib/python3.10/site-packages/backup_explore/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/vihaan/ros2_ws/install/backup_explore/share/ament_index
+creating /home/vihaan/ros2_ws/install/backup_explore/share/ament_index/resource_index
+creating /home/vihaan/ros2_ws/install/backup_explore/share/ament_index/resource_index/packages
+copying resource/backup_explore -> /home/vihaan/ros2_ws/install/backup_explore/share/ament_index/resource_index/packages
+copying package.xml -> /home/vihaan/ros2_ws/install/backup_explore/share/backup_explore
+running install_egg_info
+Copying ../../build/backup_explore/backup_explore.egg-info to /home/vihaan/ros2_ws/install/backup_explore/lib/python3.10/site-packages/backup_explore-0.0.0-py3.10.egg-info
+running install_scripts
+Installing backup script to /home/vihaan/ros2_ws/install/backup_explore/lib/backup_explore
+writing list of installed files to '/home/vihaan/ros2_ws/build/backup_explore/install.log'

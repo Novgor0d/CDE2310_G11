@@ -1,0 +1,24 @@
+[2.188s] Invoking command in '/home/vihaan/ros2_ws/src/custom_explorer': PYTHONPATH=/home/vihaan/ros2_ws/src/build/custom_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/custom_explorer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/custom_explorer build --build-base /home/vihaan/ros2_ws/src/build/custom_explorer/build install --record /home/vihaan/ros2_ws/src/build/custom_explorer/install.log --single-version-externally-managed install_data
+[2.491s] running egg_info
+[2.492s] writing ../build/custom_explorer/custom_explorer.egg-info/PKG-INFO
+[2.492s] writing dependency_links to ../build/custom_explorer/custom_explorer.egg-info/dependency_links.txt
+[2.493s] writing entry points to ../build/custom_explorer/custom_explorer.egg-info/entry_points.txt
+[2.493s] writing requirements to ../build/custom_explorer/custom_explorer.egg-info/requires.txt
+[2.493s] writing top-level names to ../build/custom_explorer/custom_explorer.egg-info/top_level.txt
+[2.495s] reading manifest file '../build/custom_explorer/custom_explorer.egg-info/SOURCES.txt'
+[2.496s] writing manifest file '../build/custom_explorer/custom_explorer.egg-info/SOURCES.txt'
+[2.496s] running build
+[2.496s] running build_py
+[2.496s] copying custom_explorer/explorer.py -> /home/vihaan/ros2_ws/src/build/custom_explorer/build/lib/custom_explorer
+[2.496s] running install
+[2.497s] running install_lib
+[2.498s] copying /home/vihaan/ros2_ws/src/build/custom_explorer/build/lib/custom_explorer/explorer.py -> /home/vihaan/ros2_ws/src/install/custom_explorer/lib/python3.10/site-packages/custom_explorer
+[2.499s] byte-compiling /home/vihaan/ros2_ws/src/install/custom_explorer/lib/python3.10/site-packages/custom_explorer/explorer.py to explorer.cpython-310.pyc
+[2.500s] running install_data
+[2.501s] running install_egg_info
+[2.503s] removing '/home/vihaan/ros2_ws/src/install/custom_explorer/lib/python3.10/site-packages/custom_explorer-0.0.0-py3.10.egg-info' (and everything under it)
+[2.503s] Copying ../build/custom_explorer/custom_explorer.egg-info to /home/vihaan/ros2_ws/src/install/custom_explorer/lib/python3.10/site-packages/custom_explorer-0.0.0-py3.10.egg-info
+[2.504s] running install_scripts
+[2.531s] Installing explorer script to /home/vihaan/ros2_ws/src/install/custom_explorer/lib/custom_explorer
+[2.532s] writing list of installed files to '/home/vihaan/ros2_ws/src/build/custom_explorer/install.log'
+[2.592s] Invoked command in '/home/vihaan/ros2_ws/src/custom_explorer' returned '0': PYTHONPATH=/home/vihaan/ros2_ws/src/build/custom_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/custom_explorer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/custom_explorer build --build-base /home/vihaan/ros2_ws/src/build/custom_explorer/build install --record /home/vihaan/ros2_ws/src/build/custom_explorer/install.log --single-version-externally-managed install_data

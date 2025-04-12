@@ -1,0 +1,24 @@
+[1.140s] Invoking command in '/home/vihaan/ros2_ws/src/thermal_explorer': PYTHONPATH=/home/vihaan/ros2_ws/src/build/thermal_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/thermal_explorer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/thermal_explorer build --build-base /home/vihaan/ros2_ws/src/build/thermal_explorer/build install --record /home/vihaan/ros2_ws/src/build/thermal_explorer/install.log --single-version-externally-managed install_data
+[1.354s] running egg_info
+[1.354s] writing ../build/thermal_explorer/thermal_explorer.egg-info/PKG-INFO
+[1.355s] writing dependency_links to ../build/thermal_explorer/thermal_explorer.egg-info/dependency_links.txt
+[1.355s] writing entry points to ../build/thermal_explorer/thermal_explorer.egg-info/entry_points.txt
+[1.355s] writing requirements to ../build/thermal_explorer/thermal_explorer.egg-info/requires.txt
+[1.355s] writing top-level names to ../build/thermal_explorer/thermal_explorer.egg-info/top_level.txt
+[1.356s] reading manifest file '../build/thermal_explorer/thermal_explorer.egg-info/SOURCES.txt'
+[1.357s] writing manifest file '../build/thermal_explorer/thermal_explorer.egg-info/SOURCES.txt'
+[1.357s] running build
+[1.357s] running build_py
+[1.357s] copying thermal_explorer/thermal_scan.py -> /home/vihaan/ros2_ws/src/build/thermal_explorer/build/lib/thermal_explorer
+[1.357s] running install
+[1.358s] running install_lib
+[1.358s] copying /home/vihaan/ros2_ws/src/build/thermal_explorer/build/lib/thermal_explorer/thermal_scan.py -> /home/vihaan/ros2_ws/src/install/thermal_explorer/lib/python3.10/site-packages/thermal_explorer
+[1.359s] byte-compiling /home/vihaan/ros2_ws/src/install/thermal_explorer/lib/python3.10/site-packages/thermal_explorer/thermal_scan.py to thermal_scan.cpython-310.pyc
+[1.360s] running install_data
+[1.360s] running install_egg_info
+[1.361s] removing '/home/vihaan/ros2_ws/src/install/thermal_explorer/lib/python3.10/site-packages/thermal_explorer-0.0.0-py3.10.egg-info' (and everything under it)
+[1.362s] Copying ../build/thermal_explorer/thermal_explorer.egg-info to /home/vihaan/ros2_ws/src/install/thermal_explorer/lib/python3.10/site-packages/thermal_explorer-0.0.0-py3.10.egg-info
+[1.362s] running install_scripts
+[1.382s] Installing thermal script to /home/vihaan/ros2_ws/src/install/thermal_explorer/lib/thermal_explorer
+[1.382s] writing list of installed files to '/home/vihaan/ros2_ws/src/build/thermal_explorer/install.log'
+[1.415s] Invoked command in '/home/vihaan/ros2_ws/src/thermal_explorer' returned '0': PYTHONPATH=/home/vihaan/ros2_ws/src/build/thermal_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/thermal_explorer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/thermal_explorer build --build-base /home/vihaan/ros2_ws/src/build/thermal_explorer/build install --record /home/vihaan/ros2_ws/src/build/thermal_explorer/install.log --single-version-externally-managed install_data

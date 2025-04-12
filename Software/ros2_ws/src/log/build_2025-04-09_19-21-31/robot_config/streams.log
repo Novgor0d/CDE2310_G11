@@ -1,0 +1,20 @@
+[1.158s] Invoking command in '/home/vihaan/ros2_ws/src/robot_config': PYTHONPATH=/home/vihaan/ros2_ws/src/build/robot_config/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/robot_config/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/robot_config build --build-base /home/vihaan/ros2_ws/src/build/robot_config/build install --record /home/vihaan/ros2_ws/src/build/robot_config/install.log --single-version-externally-managed install_data
+[1.373s] running egg_info
+[1.374s] writing ../build/robot_config/robot_config.egg-info/PKG-INFO
+[1.374s] writing dependency_links to ../build/robot_config/robot_config.egg-info/dependency_links.txt
+[1.374s] writing entry points to ../build/robot_config/robot_config.egg-info/entry_points.txt
+[1.374s] writing requirements to ../build/robot_config/robot_config.egg-info/requires.txt
+[1.374s] writing top-level names to ../build/robot_config/robot_config.egg-info/top_level.txt
+[1.375s] reading manifest file '../build/robot_config/robot_config.egg-info/SOURCES.txt'
+[1.376s] writing manifest file '../build/robot_config/robot_config.egg-info/SOURCES.txt'
+[1.376s] running build
+[1.376s] running build_py
+[1.376s] running install
+[1.377s] running install_lib
+[1.378s] running install_data
+[1.378s] running install_egg_info
+[1.380s] removing '/home/vihaan/ros2_ws/src/install/robot_config/lib/python3.10/site-packages/robot_config-0.0.0-py3.10.egg-info' (and everything under it)
+[1.380s] Copying ../build/robot_config/robot_config.egg-info to /home/vihaan/ros2_ws/src/install/robot_config/lib/python3.10/site-packages/robot_config-0.0.0-py3.10.egg-info
+[1.381s] running install_scripts
+[1.401s] writing list of installed files to '/home/vihaan/ros2_ws/src/build/robot_config/install.log'
+[1.431s] Invoked command in '/home/vihaan/ros2_ws/src/robot_config' returned '0': PYTHONPATH=/home/vihaan/ros2_ws/src/build/robot_config/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/robot_config/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/robot_config build --build-base /home/vihaan/ros2_ws/src/build/robot_config/build install --record /home/vihaan/ros2_ws/src/build/robot_config/install.log --single-version-externally-managed install_data

@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing custom_explorer.egg-info/PKG-INFO
+writing dependency_links to custom_explorer.egg-info/dependency_links.txt
+writing entry points to custom_explorer.egg-info/entry_points.txt
+writing requirements to custom_explorer.egg-info/requires.txt
+writing top-level names to custom_explorer.egg-info/top_level.txt
+reading manifest file 'custom_explorer.egg-info/SOURCES.txt'
+writing manifest file 'custom_explorer.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/vihaan/ros2_ws/install/custom_explorer/lib/python3.10/site-packages/custom-explorer.egg-link (link to .)
+Installing explorer script to /home/vihaan/ros2_ws/install/custom_explorer/lib/custom_explorer
+
+Installed /home/vihaan/ros2_ws/build/custom_explorer
+running symlink_data
+symbolically linking /home/vihaan/ros2_ws/build/custom_explorer/resource/custom_explorer -> /home/vihaan/ros2_ws/install/custom_explorer/share/ament_index/resource_index/packages

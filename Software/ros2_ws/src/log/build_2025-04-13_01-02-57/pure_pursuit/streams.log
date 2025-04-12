@@ -1,0 +1,37 @@
+[1.867s] Invoking command in '/home/vihaan/ros2_ws/src/pure_pursuit': PYTHONPATH=/home/vihaan/ros2_ws/src/build/pure_pursuit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/pure_pursuit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/pure_pursuit build --build-base /home/vihaan/ros2_ws/src/build/pure_pursuit/build install --record /home/vihaan/ros2_ws/src/build/pure_pursuit/install.log --single-version-externally-managed install_data
+[2.213s] running egg_info
+[2.214s] creating ../build/pure_pursuit/pure_pursuit.egg-info
+[2.215s] writing ../build/pure_pursuit/pure_pursuit.egg-info/PKG-INFO
+[2.215s] writing dependency_links to ../build/pure_pursuit/pure_pursuit.egg-info/dependency_links.txt
+[2.216s] writing entry points to ../build/pure_pursuit/pure_pursuit.egg-info/entry_points.txt
+[2.216s] writing requirements to ../build/pure_pursuit/pure_pursuit.egg-info/requires.txt
+[2.216s] writing top-level names to ../build/pure_pursuit/pure_pursuit.egg-info/top_level.txt
+[2.216s] writing manifest file '../build/pure_pursuit/pure_pursuit.egg-info/SOURCES.txt'
+[2.218s] reading manifest file '../build/pure_pursuit/pure_pursuit.egg-info/SOURCES.txt'
+[2.219s] writing manifest file '../build/pure_pursuit/pure_pursuit.egg-info/SOURCES.txt'
+[2.219s] running build
+[2.219s] running build_py
+[2.219s] creating /home/vihaan/ros2_ws/src/build/pure_pursuit/build
+[2.219s] creating /home/vihaan/ros2_ws/src/build/pure_pursuit/build/lib
+[2.219s] creating /home/vihaan/ros2_ws/src/build/pure_pursuit/build/lib/pure_pursuit
+[2.219s] copying pure_pursuit/__init__.py -> /home/vihaan/ros2_ws/src/build/pure_pursuit/build/lib/pure_pursuit
+[2.220s] copying pure_pursuit/pursuit.py -> /home/vihaan/ros2_ws/src/build/pure_pursuit/build/lib/pure_pursuit
+[2.220s] running install
+[2.220s] running install_lib
+[2.221s] creating /home/vihaan/ros2_ws/src/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit
+[2.221s] copying /home/vihaan/ros2_ws/src/build/pure_pursuit/build/lib/pure_pursuit/__init__.py -> /home/vihaan/ros2_ws/src/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit
+[2.222s] copying /home/vihaan/ros2_ws/src/build/pure_pursuit/build/lib/pure_pursuit/pursuit.py -> /home/vihaan/ros2_ws/src/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit
+[2.222s] byte-compiling /home/vihaan/ros2_ws/src/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit/__init__.py to __init__.cpython-310.pyc
+[2.223s] byte-compiling /home/vihaan/ros2_ws/src/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit/pursuit.py to pursuit.cpython-310.pyc
+[2.228s] running install_data
+[2.229s] creating /home/vihaan/ros2_ws/src/install/pure_pursuit/share/ament_index
+[2.229s] creating /home/vihaan/ros2_ws/src/install/pure_pursuit/share/ament_index/resource_index
+[2.229s] creating /home/vihaan/ros2_ws/src/install/pure_pursuit/share/ament_index/resource_index/packages
+[2.229s] copying resource/pure_pursuit -> /home/vihaan/ros2_ws/src/install/pure_pursuit/share/ament_index/resource_index/packages
+[2.229s] copying package.xml -> /home/vihaan/ros2_ws/src/install/pure_pursuit/share/pure_pursuit
+[2.229s] running install_egg_info
+[2.232s] Copying ../build/pure_pursuit/pure_pursuit.egg-info to /home/vihaan/ros2_ws/src/install/pure_pursuit/lib/python3.10/site-packages/pure_pursuit-0.0.0-py3.10.egg-info
+[2.234s] running install_scripts
+[2.266s] Installing pursuit_node script to /home/vihaan/ros2_ws/src/install/pure_pursuit/lib/pure_pursuit
+[2.267s] writing list of installed files to '/home/vihaan/ros2_ws/src/build/pure_pursuit/install.log'
+[2.331s] Invoked command in '/home/vihaan/ros2_ws/src/pure_pursuit' returned '0': PYTHONPATH=/home/vihaan/ros2_ws/src/build/pure_pursuit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/src/install/pure_pursuit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/pure_pursuit build --build-base /home/vihaan/ros2_ws/src/build/pure_pursuit/build install --record /home/vihaan/ros2_ws/src/build/pure_pursuit/install.log --single-version-externally-managed install_data
