@@ -48,7 +48,6 @@ try:
 
     print("Firing 3 ...")
     reload()
-
     print("Stopping Flywheel ...")
     stop_flywheel()
 
@@ -56,3 +55,4 @@ finally:
     pwm_flywheel.stop()
     pwm_servo.stop()
     GPIO.cleanup()
+

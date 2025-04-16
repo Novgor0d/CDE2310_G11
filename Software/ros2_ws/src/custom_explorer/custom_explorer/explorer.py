@@ -3,7 +3,7 @@ from rclpy.node import Node
 from nav_msgs.msg import OccupancyGrid
 from geometry_msgs.msg import PoseStamped, Twist
 from nav2_msgs.action import NavigateToPose
-from rclpy.action import ActionClient
+from rclpy.action import ActionClient, GoalResponse, CancelResponse
 from std_msgs.msg import Bool
 import numpy as np
 import time
@@ -22,27 +22,37 @@ class ExplorerNode(Node):
         self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
         self.nav_to_pose_client = ActionClient(self, NavigateToPose, 'navigate_to_pose')
 
-        self.visited_frontiers = set()
-        self.visited_positions = []
-
         self.map_data = None
-        self.robot_position = (0, 0)
-
+        self.visited_frontiers = set()
         self.pause_requested = False
-        self.auto_nav_started = False
 
-        self.timer = self.create_timer(5.0, self.explore)
+        self.exploration_mode = 'frontier'
+        self.start_time = self.get_clock().now()
+
+        self.timer = self.create_timer(10.0, self.explore)
+        self.mode_timer = self.create_timer(1.0, self.update_mode)
+        self.active_goal_handle = None
 
     def map_callback(self, msg):
         self.map_data = msg
         self.get_logger().info("Map received")
 
     def fire_callback(self, msg):
-        if msg.data:
-            self.get_logger().info("Received fire flare signal. Pausing for 20 seconds.")
+        if msg.data and not self.pause_requested:
+            self.get_logger().info("Received fire flare pause signal. Pausing for 20 seconds.")
             self.pause_requested = True
+
+            # Cancel current navigation goal if any
+            if self.active_goal_handle is not None:
+                self.get_logger().info("Cancelling active navigation goal...")
+                cancel_future = self.active_goal_handle.cancel_goal_async()
+                cancel_future.add_done_callback(lambda f: self.get_logger().info("Navigation goal cancelled."))
+
+            # Stop robot movement
             stop_msg = Twist()
             self.cmd_vel_pub.publish(stop_msg)
+
+            # Start pause thread
             threading.Thread(target=self.pause_exploration).start()
 
     def pause_exploration(self):
@@ -51,6 +61,10 @@ class ExplorerNode(Node):
         self.pause_requested = False
 
     def navigate_to(self, x, y):
+        if self.pause_requested:
+            self.get_logger().info("Navigation skipped due to pause.")
+            return
+
         goal_msg = PoseStamped()
         goal_msg.header.frame_id = 'map'
         goal_msg.header.stamp = self.get_clock().now().to_msg()
@@ -74,6 +88,8 @@ class ExplorerNode(Node):
             return
 
         self.get_logger().info("Goal accepted")
+        self.active_goal_handle = goal_handle
+
         result_future = goal_handle.get_result_async()
         result_future.add_done_callback(self.navigation_complete_callback)
 
@@ -83,6 +99,8 @@ class ExplorerNode(Node):
             self.get_logger().info(f"Navigation completed with result: {result}")
         except Exception as e:
             self.get_logger().error(f"Navigation failed: {e}")
+        finally:
+            self.active_goal_handle = None
 
     def find_frontiers(self, map_array):
         frontiers = []
@@ -99,11 +117,9 @@ class ExplorerNode(Node):
         return frontiers
 
     def choose_random_point(self, map_array):
-        """Choose a random point on the map that is unexplored."""
         rows, cols = map_array.shape
         random_row, random_col = random.randint(0, rows - 1), random.randint(0, cols - 1)
 
-        # Ensure the point is free space (0) and not visited
         while map_array[random_row, random_col] != 0 or (random_row, random_col) in self.visited_frontiers:
             random_row, random_col = random.randint(0, rows - 1), random.randint(0, cols - 1)
 
@@ -111,29 +127,65 @@ class ExplorerNode(Node):
         self.get_logger().info(f"Chosen random point: ({random_row}, {random_col})")
         return random_row, random_col
 
-    def explore(self):
-        if self.pause_requested:
-            self.get_logger().info("Exploration is paused.")
-            return
+    def choose_wall_point(self, map_array):
+        rows, cols = map_array.shape
+        wall_points = []
 
-        if self.map_data is None:
-            self.get_logger().warning("No map data available")
+        for r in range(1, rows - 1):
+            for c in range(1, cols - 1):
+                if map_array[r, c] == 0:
+                    neighbors = map_array[r-1:r+2, c-1:c+2].flatten()
+                    if 100 in neighbors:
+                        wall_points.append((r, c))
+
+        if not wall_points:
+            return self.choose_random_point(map_array)
+
+        point = random.choice(wall_points)
+        self.visited_frontiers.add(point)
+        self.get_logger().info(f"Chosen wall-following point: {point}")
+        return point
+
+    def explore(self):
+        if self.pause_requested or self.map_data is None:
             return
 
         map_array = np.array(self.map_data.data).reshape(
             (self.map_data.info.height, self.map_data.info.width))
 
-        # Choose a random point to navigate to
-        random_point = self.choose_random_point(map_array)
+        if self.exploration_mode == 'frontier':
+            frontiers = self.find_frontiers(map_array)
+            if not frontiers:
+                self.get_logger().info("No frontiers found, switching to random.")
+                point = self.choose_random_point(map_array)
+            else:
+                point = random.choice(frontiers)
+        else:
+            point = self.choose_random_point(map_array)
 
-        if not random_point:
-            self.get_logger().warning("No valid point found to explore")
-            return
-
-        goal_x = random_point[1] * self.map_data.info.resolution + self.map_data.info.origin.position.x
-        goal_y = random_point[0] * self.map_data.info.resolution + self.map_data.info.origin.position.y
+        goal_x = point[1] * self.map_data.info.resolution + self.map_data.info.origin.position.x
+        goal_y = point[0] * self.map_data.info.resolution + self.map_data.info.origin.position.y
 
         self.navigate_to(goal_x, goal_y)
+
+    def update_mode(self):
+        elapsed = (self.get_clock().now() - self.start_time).nanoseconds / 1e9
+
+        if elapsed < 240:
+            self.exploration_mode = 'frontier'
+        else:
+            # Time since switching phase (after initial 4 min)
+            time_since_phase = elapsed - 240
+            # Check which 2-minute phase we're in
+            phase_number = int(time_since_phase // 120)
+
+            if phase_number % 2 == 0:
+                self.exploration_mode = 'random'
+            else:
+                self.exploration_mode = 'frontier'
+
+        self.get_logger().info(f"Exploration mode: {self.exploration_mode}")
+
 
 
 def main(args=None):

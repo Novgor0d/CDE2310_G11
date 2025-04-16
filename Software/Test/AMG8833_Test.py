@@ -49,17 +49,17 @@ def set_servo_angle(angles):
                 if temp > THRESHOLD:
                     count += 1
 
-           # print(["{:.2f}".format(temp) for temp in row])  # Format for better readability
-        #print("\n" + "-" * 40)  # Separator for clarity
+           print(["{:.2f}".format(temp) for temp in row])  # Format for better readability
+        print("\n" + "-" * 40)  # Separator for clarity
         if count > 40:
-#            print("Fire Flare")
+            print("Fire Flare")
             flag = 1
             break
 
 try:
       set_servo_angle(angles)
       if flag == 1:
-#          subprocess.run(["python3", "Motor_Test.py"])
+          subprocess.run(["python3", "Motor_Test.py"])    #Test motor activation sequence after heat detection
            print(1)
 except KeyboardInterrupt:
     print("Exiting...")
