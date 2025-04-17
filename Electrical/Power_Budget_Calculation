@@ -8,4 +8,6 @@ Assumptions:
 Calculation: 
 (8.4*20) + (5.9*50) + (13*30) + (10.22*T) = 11.1*1.8*3600*0.8
 => T = 92.3 minutes
-This means after one complete charge, the turtlebot can run for 92.3 minutes. 
+This means after one complete charge, the turtlebot is expected to run for 92.3 minutes. 
+
+Note: Please refer to 'Power_Budget_Table' file for the power distribution of each component, which has been used in the above calculations.
