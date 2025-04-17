@@ -1,0 +1,3 @@
+[console_scripts]
+backup = backup_explore.explore:main
+

@@ -1,0 +1,24 @@
+[1.074s] Invoking command in '/home/vihaan/ros2_ws/build/launch': PYTHONPATH=/home/vihaan/ros2_ws/build/launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/install/launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vihaan/ros2_ws/build/launch/build --no-deps symlink_data
+[1.366s] running develop
+[1.549s] running egg_info
+[1.549s] creating launch.egg-info
+[1.549s] writing launch.egg-info/PKG-INFO
+[1.550s] writing dependency_links to launch.egg-info/dependency_links.txt
+[1.550s] writing entry points to launch.egg-info/entry_points.txt
+[1.550s] writing requirements to launch.egg-info/requires.txt
+[1.550s] writing top-level names to launch.egg-info/top_level.txt
+[1.551s] writing manifest file 'launch.egg-info/SOURCES.txt'
+[1.553s] reading manifest file 'launch.egg-info/SOURCES.txt'
+[1.554s] writing manifest file 'launch.egg-info/SOURCES.txt'
+[1.556s] running build_ext
+[1.556s] Creating /home/vihaan/ros2_ws/install/launch/lib/python3.10/site-packages/launch.egg-link (link to .)
+[1.557s] Installing launcher script to /home/vihaan/ros2_ws/install/launch/lib/launch
+[1.558s] 
+[1.558s] Installed /home/vihaan/ros2_ws/build/launch
+[1.558s] running symlink_data
+[1.558s] creating /home/vihaan/ros2_ws/install/launch/share/ament_index
+[1.558s] creating /home/vihaan/ros2_ws/install/launch/share/ament_index/resource_index
+[1.558s] creating /home/vihaan/ros2_ws/install/launch/share/ament_index/resource_index/packages
+[1.558s] symbolically linking /home/vihaan/ros2_ws/build/launch/resource/launch -> /home/vihaan/ros2_ws/install/launch/share/ament_index/resource_index/packages
+[1.558s] symbolically linking /home/vihaan/ros2_ws/build/launch/package.xml -> /home/vihaan/ros2_ws/install/launch/share/launch
+[1.599s] Invoked command in '/home/vihaan/ros2_ws/build/launch' returned '0': PYTHONPATH=/home/vihaan/ros2_ws/build/launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vihaan/ros2_ws/install/launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vihaan/ros2_ws/build/launch/build --no-deps symlink_data
