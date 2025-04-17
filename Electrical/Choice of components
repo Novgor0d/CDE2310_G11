@@ -1,0 +1,13 @@
+1) We chose AMG8833 temperature sensor because:
+  -Gives an 8x8 grid of temperature points.
+  -Has low Power Consumption 
+  -Has a good temperature range of -20°C to 80°C.
+  -Frame rate: 10 Frames/sec
+  -Has built-in ADC, so need to for an external ADC on the raspberry pi.
+(For Simple and Budget-friendly heat detection)
+
+2) The two 12V motors (JGB37-520) are used for flywheels.
+
+3) The L298N motor driver is to control the two 12V flywheel motors. 
+
+4) The SG90 servo motor is used in the rack and pinion mechanism, to push the platform holding the ball, up to the flywheel.
