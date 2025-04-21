@@ -62,7 +62,7 @@ cd ~/ros2_ws/src
 rm -rf ~/ros2_ws/src/custom_explorer
 rm -rf ~/ros2_ws/src/robot_config
 ```
-The rm commands are used to clean up the workspace by removing nested or redundant directories after extracting the necessary packages, ensuring a flat and organized structure in ~/ros2_ws/src.
+The rm commands are used to clean up the workspace by removing nested or redundant directories after extracting the necessary packages for remote PC and RPi, ensuring a flat and organized structure in ~/ros2_ws/src.
 
 3. **Install dependencies and build the workspace:**
 ```bash
