@@ -111,14 +111,14 @@ ros2 launch robot_config nav2_launch.py use_sim_time:=True
 ros2 run custom_explorer explorer
 ```
 
-##**System Functionality**
+## **System Functionality**
 ###**Thermal Detection and Flare Firing**
 Upon initialization, the system continuously scans the environment using the thermal sensor. When a heat source (e.g., fire) is detected, the robot navigates towards the source and fires a flare to indicate the detection. The detection and flare firing are performed based on a predefined temperature threshold, which can be configured to suit various use cases.
 
-###**Autonomous Exploration**
+### **Autonomous Exploration**
 The system employs a frontier exploration algorithm that identifies unexplored areas (frontiers) in the environment. The robot autonomously navigates towards these regions to gather more data, expanding its knowledge of the environment. The system dynamically switches between frontier-based exploration and random exploration after specified time intervals.
 
-###**ROS2 Communication**
+### **ROS2 Communication**
 The system utilizes ROS2 for communication between the various components:
 **Published Topics:**
   - /fire_flare ([Bool]): Indicates when the robot detects a thermal source and fires a flare.
@@ -129,7 +129,7 @@ The system utilizes ROS2 for communication between the various components:
    - /odom ([nav_msgs/msg/Odometry]): Odometry data used for robot localization.
    - /map ([nav_msgs/msg/OccupancyGrid]): The map of the environment for exploration and frontier detection.
 
-##**Node Architecture:**
+## **Node Architecture:**
 1. **ThermalDetectorNode:**
   - Purpose: Detects thermal sources and triggers corresponding actions.
   - Operation: Scans the environment at regular intervals and activates the flare system when a source exceeding the temperature threshold is detected.
@@ -140,7 +140,7 @@ The system utilizes ROS2 for communication between the various components:
   - Purpose: Responsible for autonomous exploration using a frontier detection algorithm.
   - Operation: Detects unexplored frontiers and navigates the robot towards them to enhance map coverage.
 
-##Testing and Validation
+## Testing and Validation
 The system has been tested both in simulated environments (Gazebo) and with real-world harware. The modular nature of the sytem ensures that individual components can be tested in isolation for reliability.
 
 
