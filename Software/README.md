@@ -68,12 +68,14 @@ ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/
 ```bash
 ros2 launch slam_toolbox online_async_launch.py
 ```
-3. **Use Custom Navigatoin Parameters:**
+3. **Use Custom Navigation Parameters:**
+   
 This system uses a customized nav2_params.yaml file located at: robot_config/config/nav2_params.yaml
 ```bash
 ros2 launch robot_config nav2_launch.py
 ```
 This step ensures that all Nav2 nodes (e.g., planner, controller, recovery behaviours) run with the tuned parameters specific to this project. These parameters can be adjusted as per requirement.
+
 4. **Run the custom exploration node:**
 ```bash
 ros2 run custom_explorer explorer
@@ -112,7 +114,7 @@ ros2 run custom_explorer explorer
 ```
 
 ## **System Functionality**
-###**Thermal Detection and Flare Firing**
+### **Thermal Detection and Flare Firing**
 Upon initialization, the system continuously scans the environment using the thermal sensor. When a heat source (e.g., fire) is detected, the robot navigates towards the source and fires a flare to indicate the detection. The detection and flare firing are performed based on a predefined temperature threshold, which can be configured to suit various use cases.
 
 ### **Autonomous Exploration**
