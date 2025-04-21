@@ -20,10 +20,27 @@ The software stack is divided across two platforms:
 - ROS2 Packages: nav_msgs, geometry_msgs, action_msgs
 - Python 3.10+
 - Python libraries:
-- `numpy`  
-  Install with:  
-  ```bash
-  pip install numpy
+  - `numpy`  
+    Install with:  
+    ```bash
+    pip install numpy
+    ```
+  - `adafruit-circuitpython-amg88xx`  
+    Install with:  
+    ```bash
+    pip install adafruit-circuitpython-amg88xx
+    ```
+  - `adafruit-blinka`  
+    Required for `busio` and `board` on Raspberry Pi. Install with:  
+    ```bash
+    pip install adafruit-blinka
+    ```
+  - `RPi.GPIO`  
+    Typically pre-installed on Raspberry Pi OS. If needed:  
+    ```bash
+    pip install RPi.GPIO
+    ```
+
 
 
 
