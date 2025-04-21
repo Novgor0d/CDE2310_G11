@@ -44,20 +44,21 @@ mkdir -p ~/ros2_ws/src
 ```
 2. **Clone the repository:**
 
-  (On remote pc)
+  (On Remote PC)
 ```bash
 cd ~/ros2_ws/src
 git clone https://github.com/Novgor0d/CDE2310_G11.git
 cd CDE2310_G11/Software/src
 cp -r * ~/ros2_ws/src/
 rm -rf ~/ros2_ws/src/CDE2310_G11
-#Copy the 'src' directory from the local machine's ros2_ws to the Raspberry Pi's ros2_ws/src directory
+# Copy the 'src' directory from the local machine's ros2_ws to the Raspberry Pi's ros2_ws/src directory
 scp -r ~/ros2_ws/src pi@rpi_ip_address:/home/pi/ros2_ws/src
 rm -rf ~/ros2_ws/src/thermal_explorer
 rm -rf ~/ros2_ws/src/fire_flare
 ```
   (On RPi)
 ```bash
+# These commands are to be run after the src content has been copied from the remote pc to the RPi
 cd ~/ros2_ws/src
 rm -rf ~/ros2_ws/src/custom_explorer
 rm -rf ~/ros2_ws/src/robot_config
