@@ -1,6 +1,6 @@
 # **Thermal Detection and Autonomous Exploration System**
 ## **Overview**
-This repository contains the software framework for a robotic system capable of detecting thermal sources while performing autonomous exploration of an unkown environment. The system is built on ROS2 and meant for deployement on Raspberry Pi. It maps the surroundings using SLAM, detects hat signature, and deploys a flare mechanism.
+This repository contains the software framework for a robotic system capable of detecting thermal sources while performing autonomous exploration of an unkown environment. The system is built on ROS2 and meant for deployement on Raspberry Pi. It maps the surroundings using SLAM, detects heat signatures, and deploys a flare mechanism.
 
 ## **Key Features**
 - **Autonmous frontier-based exploration:** Uses a frontier exploration algorithm to autnomously navigate towards unexplored regions.
