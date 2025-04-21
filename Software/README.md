@@ -23,5 +23,8 @@ This repository contains the software framework for an autonomous robotic system
 
 ## **Installation and Setup**
 1. Clone the repository:
+'''bash
+cd ~/ros2_ws
+git clone https://github.com/Novgor0d/CDE2310_G11.git
 
 
