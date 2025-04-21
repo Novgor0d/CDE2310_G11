@@ -19,7 +19,7 @@ The software stack is divided across two platforms:
 - ROS2 Humble
 - Python 3
 - TurtleBot3-compatible hardware (or Gazebo simulation)
-- ROS2 Packages
+- ROS2 Packages: nav_msgs, geometry_msgs, action_msgs
 
 ## **Installation and Setup**
 1. **Create the ROS2 workspace:**
