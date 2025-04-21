@@ -122,6 +122,7 @@ The system employs a frontier exploration algorithm that identifies unexplored a
 
 ### **ROS2 Communication**
 The system utilizes ROS2 for communication between the various components:
+
 **Published Topics:**
   - /fire_flare ([Bool]): Indicates when the robot detects a thermal source and fires a flare.
   - /cmd_vel ([geometry_msgs/msg/Twist]): Command velocity for controlling robot movement.
