@@ -37,15 +37,6 @@ The software stack is divided across two platforms:
     ```bash
     pip install adafruit-blinka
     ```
-  - `RPi.GPIO`  
-    Typically pre-installed on Raspberry Pi OS. If needed:  
-    ```bash
-    pip install RPi.GPIO
-    ```
-
-
-
-
 ## **Installation and Setup**
 1. **Create the ROS2 workspace:**
 ```bash
