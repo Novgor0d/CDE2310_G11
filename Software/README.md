@@ -27,6 +27,7 @@ This repository contains the software framework for an autonomous robotic system
 mkdir -p ~/ros2_ws/src
 ```
 2. **Clone the repository:**
+
 (On Laptop)
 ```bash
 cd ~/ros2_ws/src
