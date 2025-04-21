@@ -8,7 +8,7 @@ This repository contains the software framework for a robotic system capable of 
 - **Thermal Source Detection:** Detects heat sources based on certain temperature thresholds.
 - **Motorized flare deployment:** Fires a flare to indicate successful detection of a heat source, using a flywheel and servo-based system.
 - **Data Logging**: Provides detailed logging of system status, sensor data, and actions for debugging and performance monitoring.
-- **Full ROS2 Humble compatibility**:
+- **Full ROS2 Humble compatibility**
 
 ## **System Architecture**
 The software stack is divided across two platforms:
