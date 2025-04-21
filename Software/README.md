@@ -18,6 +18,7 @@ The software stack is divided across two platforms:
 - Ubuntu 22.04 (recommended)
 - ROS2 Humble
 - ROS2 Packages: nav_msgs, geometry_msgs, action_msgs
+
   ([Install ROS2 packages and Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/#sbc-setup)
 - Python 3.10+
 - Python libraries:
