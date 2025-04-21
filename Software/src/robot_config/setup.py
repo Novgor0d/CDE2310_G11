@@ -18,8 +18,8 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Vihaan',
-    maintainer_email='vihaandahiya006@gmail.com',
+    maintainer='unknown',
+    maintainer_email='unknown@todo.todo',
     description='Custom bringup package for robot autonomy',
     license='Apache License 2.0',  # Set your license here
     tests_require=['pytest'],
