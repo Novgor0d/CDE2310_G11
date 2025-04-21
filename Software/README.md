@@ -13,7 +13,7 @@ This repository contains the software framework for a robotic system capable of 
 ## **System Architecture**
 The software stack is divided across two platforms:
   - **Remote PC (Main Control Node):** Runs SLAM, Nav2 Stack, RViz visualisation, and the exploration code.
-  - **Raspberry Pi (Onboard Robot):** Handles robot bring-up, thermal sensin, and flare deployment mechanisms.
+  - **Raspberry Pi (Onboard Robot):** Handles robot bring-up, thermal sensing, and flare deployment mechanisms.
   
 ## **Prerequisites**
 - ROS2 Humble
