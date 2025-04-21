@@ -1,3 +1,0 @@
-[console_scripts]
-motor = fire_flare.motors:main
-

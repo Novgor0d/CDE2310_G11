@@ -1,3 +1,0 @@
-[console_scripts]
-pursuit_node = pure_pursuit.pursuit:main
-

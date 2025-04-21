@@ -1,3 +1,0 @@
-[console_scripts]
-launcher = launch.launch.launcher:main
-
