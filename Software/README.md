@@ -3,25 +3,32 @@
 This repository contains the software framework for a robotic system capable of detecting thermal sources while performing autonomous exploration of an unkown environment. The system is built on ROS2 and meant for deployement on Raspberry Pi. It maps the surroundings using SLAM, detects hat signature, and deploys a flare mechanism.
 
 ## **Key Features**
-- **Thermal Source Detection:** Detects heat sources based on certain temperature thresholds.
 - **Autonmous frontier-based exploration:** Uses a frontier exploration algorithm to autnomously navigate towards unexplored regions.
 - **Real-time SLAM integration**
+- **Thermal Source Detection:** Detects heat sources based on certain temperature thresholds.
 - **Motorized flare deployment:** Fires a flare to indicate successful detection of a heat source, using a flywheel and servo-based system.
 - **Data Logging**: Provides detailed logging of system status, sensor data, and actions for debugging and performance monitoring.
 - **Full ROS2 Humble compatibility**:
 
+## **System Architecture**
+The software stack is divided across two platforms:
+**Remote PC (Main Control Node)**
+Runs SLAM, navigation, RViz visualisation, and the exploration code.
+**Raspberry Pi (Onboard Robot)**
+Handles robot bring-up, thermal sensin, and flare deployment mechanisms.
+
 ## **Prerequisites**
-- ROS2 Humble (or later)
-- Python 3.8 or higher
+- ROS2 Humble
+- Python 3
+- TurtleBot3-compatible hardware (or Gazebo simulation)
 - Required ROS2 Packages:
   - rclpy
   - std_msgs
   - nav_msgs
   - geometry_msgs
   - action_msgs
-  - RPi.GPIO
-  - time
-  - math
+  - nav2_bringup
+  - slam_toolbox
 
 ## **Installation and Setup**
 1. **Create the ROS2 workspace:**
