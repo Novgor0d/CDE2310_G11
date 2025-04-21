@@ -22,13 +22,21 @@ This repository contains the software framework for an autonomous robotic system
   - math
 
 ## **Installation and Setup**
-1. Clone the repository:
+1. **Clone the repository:**
 ```bash
 cd ~/ros2_ws/
 git clone https://github.com/Novgor0d/CDE2310_G11.git
+```
+2. **Build the ROS2 workspace:**
+```bash
 cd ~/ros2_ws
 colcon build
+```
+3. **Source the workspace:**
+```bash
 source install/setup.bash
 ```
+
+
 
 
