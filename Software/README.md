@@ -138,7 +138,7 @@ The system has been tested both in simulated environments (Gazebo) and with real
 
 The folder **Test** contains verification scripts for hardware-level functionality of the thermal detection and flare deployment system used in the project.
 
-**Contents**
+### **Contents**
 
 **thermal_test.py**
 - Sweeps a servo across predefined angles.
