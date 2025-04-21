@@ -27,13 +27,25 @@ This repository contains the software framework for an autonomous robotic system
 mkdir -p ~/ros2_ws/src
 ```
 2. **Clone the repository:**
+(On Laptop)
 ```bash
 cd ~/ros2_ws/src
 git clone https://github.com/Novgor0d/CDE2310_G11.git
 cd CDE2310_G11/software/ros2_ws/src
 cp -r * ~/ros2_ws/src/
-cd ~
-rm -rf CDE2310_G11
+rm -rf ~/ros2_ws/src/CDE2310_G11
+rm -rf ~/ros2_ws/src/thermal_explorer
+rm -rf ~/ros2_ws/src/fire_flare
+```
+(On RPi)
+```bash
+cd ~/ros2_ws/src
+git clone https://github.com/Novgor0d/CDE2310_G11.git
+cd CDE2310_G11/software/ros2_ws/src
+cp -r * ~/ros2_ws/src/
+rm -rf ~/ros2_ws/src/CDE2310_G11
+rm -rf ~/ros2_ws/src/custom_explorer
+rm -rf ~/ros2_ws/src/robot_config
 ```
 3. **Install dependencies and build the workspace:**
 ```bash
