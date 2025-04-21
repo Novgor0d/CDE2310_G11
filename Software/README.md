@@ -152,7 +152,8 @@ The folder **Test** contains verification scripts for hardware-level functionali
 **servo_reset.py**
 - Simple utility script to reset the servo to a neutral (0-degree) position after firing or testing.
 
-###Usage
+### Usage
+
 Ensure you have the necessary hardware connected (thermal sensor, servo, flywheel mechanism), then run using
 ```python
 python3 [file_name].py
