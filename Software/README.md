@@ -78,6 +78,25 @@ ros2 run thermal_explorer thermal
 ```bash
 ros2 run fire_flare motor
 ```
+## **Simulating in Gazebo:**
+To simulate the navigation in a virutal environment, run the following commands in separate terminals:
+1. **Launch the TurtleBot3 in a Gazebo simulation world:**
+```bash
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+```
+2. **Launch SLAM with simulation time enabled:**
+```bash
+ros2 launch slam_toolbox online_async_launch.py use_sim_time:=True
+```
+3. **Launch Nav2 stack with simulation time enabled:**
+```bash
+ros2 launch robot_config nav2_launch.py use_sim_time:=True
+```
+4. **Run the custom exploration node in the simulation:**
+```bash
+ros2 run custom_explorer explorer
+```
+
 
  
 
