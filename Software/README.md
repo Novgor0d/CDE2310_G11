@@ -20,8 +20,10 @@ The software stack is divided across two platforms:
 - ROS2 Packages: nav_msgs, geometry_msgs, action_msgs
 - Python 3.10+
 - Python libraries:
-..numpy
-..
+- `numpy`  
+  Install with:  
+  ```bash
+  pip install numpy
 
 
 
