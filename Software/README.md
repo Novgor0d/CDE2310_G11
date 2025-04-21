@@ -77,7 +77,7 @@ colcon build
 source install/setup.bash
 ```
 ## **Running the System**
-### ***On remote system:***
+### ***On Remote PC:***
 Run the following commands in separate terminal windows:
 1. **Start RViz2 for visualization:**
 ```bash
