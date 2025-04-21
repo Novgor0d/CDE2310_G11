@@ -132,17 +132,6 @@ The system utilizes ROS2 for communication between the various components:
    - /odom ([nav_msgs/msg/Odometry]): Odometry data used for robot localization.
    - /map ([nav_msgs/msg/OccupancyGrid]): The map of the environment for exploration and frontier detection.
 
-## **Node Architecture:**
-1. **ThermalDetectorNode:**
-  - Purpose: Detects thermal sources and triggers corresponding actions.
-  - Operation: Scans the environment at regular intervals and activates the flare system when a source exceeding the temperature threshold is detected.
-2. **FlareExplorerNode**
-  - Purpose: Controls the flare mechanism (flywheel and servo) to fire flares.
-  - Operation: Spins the flywheel and activates the servo motor to fire the flare.
-3. **ExplorerNode**
-  - Purpose: Responsible for autonomous exploration using a frontier detection algorithm.
-  - Operation: Detects unexplored frontiers and navigates the robot towards them to enhance map coverage.
-
 ## Testing and Validation
 The system has been tested both in simulated environments (Gazebo) and with real-world harware. The modular nature of the sytem ensures that individual components can be tested in isolation for reliability.
 
