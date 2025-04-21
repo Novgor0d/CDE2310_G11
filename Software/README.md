@@ -21,14 +21,6 @@ Handles robot bring-up, thermal sensin, and flare deployment mechanisms.
 - ROS2 Humble
 - Python 3
 - TurtleBot3-compatible hardware (or Gazebo simulation)
-- Required ROS2 Packages:
-  - rclpy
-  - std_msgs
-  - nav_msgs
-  - geometry_msgs
-  - action_msgs
-  - nav2_bringup
-  - slam_toolbox
 
 ## **Installation and Setup**
 1. **Create the ROS2 workspace:**
@@ -78,10 +70,12 @@ ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/
 ```bash
 ros2 launch slam_toolbox online_async_launch.py
 ```
-3. **Start the robot navigation system:**
+3. **Use Custom Navigatoin Parameters:**
+This system uses a customized nav2_params.yaml file located at: robot_config/config/nav2_params.yaml
 ```bash
 ros2 launch robot_config nav2_launch.py
 ```
+This step ensures that all Nav2 nodes (e.g., planner, controller, recovery behaviours) run with the tuned parameters specific to this project. These parameters can be adjusted as per requirement.
 4. **Run the custom exploration node:**
 ```bash
 ros2 run custom_explorer explorer
@@ -118,6 +112,39 @@ ros2 launch robot_config nav2_launch.py use_sim_time:=True
 ```bash
 ros2 run custom_explorer explorer
 ```
+
+##**System Functionality**
+###**Thermal Detection and Flare Firing**
+Upon initialization, the system continuously scans the environment using the thermal sensor. When a heat source (e.g., fire) is detected, the robot navigates towards the source and fires a flare to indicate the detection. The detection and flare firing are performed based on a predefined temperature threshold, which can be configured to suit various use cases.
+
+###**Autonomous Exploration**
+The system employs a frontier exploration algorithm that identifies unexplored areas (frontiers) in the environment. The robot autonomously navigates towards these regions to gather more data, expanding its knowledge of the environment. The system dynamically switches between frontier-based exploration and random exploration after specified time intervals.
+
+###**ROS2 Communication**
+The system utilizes ROS2 for communication between the various components:
+**Published Topics:**
+  - /fire_flare ([Bool]): Indicates when the robot detects a thermal source and fires a flare.
+  - /cmd_vel ([geometry_msgs/msg/Twist]): Command velocity for controlling robot movement.
+  - /goal_pose ([geometry_msgs/msg/PoseStamped]): The target position for the robot (e.g., towards a detected heat source or frontier).
+
+**Subscribed Topics:**
+   - /odom ([nav_msgs/msg/Odometry]): Odometry data used for robot localization.
+   - /map ([nav_msgs/msg/OccupancyGrid]): The map of the environment for exploration and frontier detection.
+
+##**Node Architecture:**
+1. **ThermalDetectorNode:**
+  - Purpose: Detects thermal sources and triggers corresponding actions.
+  - Operation: Scans the environment at regular intervals and activates the flare system when a source exceeding the temperature threshold is detected.
+2. **FlareExplorerNode**
+  - Purpose: Controls the flare mechanism (flywheel and servo) to fire flares.
+  - Operation: Spins the flywheel and activates the servo motor to fire the flare.
+3. **ExplorerNode**
+  - Purpose: Responsible for autonomous exploration using a frontier detection algorithm.
+  - Operation: Detects unexplored frontiers and navigates the robot towards them to enhance map coverage.
+
+##Testing and Validation
+The system has been tested both in simulated environments (Gazebo) and with real-world harware. The modular nature of the sytem ensures that individual components can be tested in isolation for reliability.
+
 
 
  
