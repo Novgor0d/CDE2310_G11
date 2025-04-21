@@ -64,6 +64,22 @@ ros2 launch robot_config nav2_launch.py
 ```bash
 ros2 run custom_explorer explorer
 ```
+### **On Raspberry Pi:**
+Run the following commands in separate terminal windows:
+1. **Launch TurtleBot3 bringup:**
+```bash
+ros2 launch turtlebot3_bringup robot.launch.py
+```
+2. **Start the thermal detection node:**
+```bash
+ros2 run thermal_explorer thermal
+```
+3. **Run the flare firing mechanism:**
+```bash
+ros2 run fire_flare motor
+```
+
+ 
 
 
 
