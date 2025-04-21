@@ -48,7 +48,7 @@ mkdir -p ~/ros2_ws/src
 ```bash
 cd ~/ros2_ws/src
 git clone https://github.com/Novgor0d/CDE2310_G11.git
-cd CDE2310_G11/Software/ros2_ws/src
+cd CDE2310_G11/Software/src
 cp -r * ~/ros2_ws/src/
 rm -rf ~/ros2_ws/src/CDE2310_G11
 #Copy the 'src' directory from the local machine's ros2_ws to the Raspberry Pi's ros2_ws/src directory
