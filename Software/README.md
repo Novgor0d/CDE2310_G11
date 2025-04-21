@@ -58,7 +58,7 @@ rm -rf ~/ros2_ws/src/fire_flare
 ```
   (On RPi)
 ```bash
-# These commands are to be run after the 'src' directory has been copied from the remote pc over to the RPi
+# These commands are to be run after the 'src' directory has been copied over from the remote PC to the RPi
 cd ~/ros2_ws/src
 rm -rf ~/ros2_ws/src/custom_explorer
 rm -rf ~/ros2_ws/src/robot_config
