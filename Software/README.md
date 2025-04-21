@@ -136,6 +136,26 @@ The system utilizes ROS2 for communication between the various components:
 ## Testing and Validation
 The system has been tested both in simulated environments (Gazebo) and with real-world harware. The modular nature of the sytem ensures that individual components can be tested in isolation for reliability.
 
+The folder **Test** contains verification scripts for hardware-level functionality of the thermal detection and flare deployment system used in the project.
+**Contents**
+**thermal_test.py**
+- Sweeps a servo across predefined angles.
+- Uses the AMG8833 thermal camera to detect heat signatures above a defined threshold.
+- if a high heat count is detected, triggers a flare firing sequence by executing Motor_Test.py
+
+**Motor_Test.py**
+- Activates a flywheel mechanism and sequentially fires three flares using a servo reload action.
+- Includes controlled delays for flywheel spin-up and reload timing.
+
+**servo_reset.py**
+- Simple utility script to reset the servo to a neutral (0-degree) position after firing or testing.
+
+###Usage
+Ensure you have the necessary hardware connected (thermal sensor, servo, flywheel mechanism), then run using
+```python
+python3 [file_name].py
+```
+
 ## References
 This project was developed with guidance and inspiration from the following sources:
   - [Automatic Addison – ROS 2 Navigation Tuning Guide (Nav2)](https://automaticaddison.com/ros-2-navigation-tuning-guide-nav2/)
