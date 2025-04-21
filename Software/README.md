@@ -51,16 +51,14 @@ git clone https://github.com/Novgor0d/CDE2310_G11.git
 cd CDE2310_G11/Software/ros2_ws/src
 cp -r * ~/ros2_ws/src/
 rm -rf ~/ros2_ws/src/CDE2310_G11
+#Copy the 'src' directory from the local machine's ros2_ws to the Raspberry Pi's ros2_ws/src directory
+scp -r ~/ros2_ws/src pi@rpi_ip_address:/home/pi/ros2_ws/src
 rm -rf ~/ros2_ws/src/thermal_explorer
 rm -rf ~/ros2_ws/src/fire_flare
 ```
   (On RPi)
 ```bash
 cd ~/ros2_ws/src
-git clone https://github.com/Novgor0d/CDE2310_G11.git
-cd CDE2310_G11/Software/ros2_ws/src
-cp -r * ~/ros2_ws/src/
-rm -rf ~/ros2_ws/src/CDE2310_G11
 rm -rf ~/ros2_ws/src/custom_explorer
 rm -rf ~/ros2_ws/src/robot_config
 ```
