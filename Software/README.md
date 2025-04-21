@@ -154,7 +154,7 @@ The folder **Test** contains verification scripts for hardware-level functionali
 
 ### Usage
 
-Ensure you have the necessary hardware connected (thermal sensor, servo, flywheel mechanism), then run using
+Ensure you have the necessary hardware connected (thermal sensor, servo, flywheel mechanism), then run the scripts on RPi using
 ```python
 python3 [file_name].py
 ```
