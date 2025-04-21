@@ -28,7 +28,7 @@ mkdir -p ~/ros2_ws/src
 ```
 2. **Clone the repository:**
 
-(On Laptop)
+  (On Laptop)
 ```bash
 cd ~/ros2_ws/src
 git clone https://github.com/Novgor0d/CDE2310_G11.git
@@ -38,7 +38,7 @@ rm -rf ~/ros2_ws/src/CDE2310_G11
 rm -rf ~/ros2_ws/src/thermal_explorer
 rm -rf ~/ros2_ws/src/fire_flare
 ```
-(On RPi)
+  (On RPi)
 ```bash
 cd ~/ros2_ws/src
 git clone https://github.com/Novgor0d/CDE2310_G11.git
