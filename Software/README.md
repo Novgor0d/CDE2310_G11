@@ -36,6 +36,25 @@ colcon build
 ```bash
 source install/setup.bash
 ```
+## **Running the System**
+### ***On remote system:***
+Run the following commands in separate terminal windows:
+1. **Start RViz2 for visualization:**
+```bash
+ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz
+```
+2. **Launch SLAM:**
+```bash
+ros2 launch slam_toolbox online_async_launch.py
+```
+3. **Start the robot navigation system:**
+```bash
+ros2 launch robot_config nav2_launch.py
+```
+4. **Run the custom exploration node:**
+```bash
+ros2 run custom_explorer explorer
+```
 
 
 
