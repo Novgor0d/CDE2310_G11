@@ -4,7 +4,6 @@ This repository contains the software framework for a robotic system capable of 
 
 ## **Key Features**
 - **Autonmous frontier-based exploration:** Uses a frontier exploration algorithm to autnomously navigate towards unexplored regions.
-- **Real-time SLAM integration**
 - **Thermal Source Detection:** Detects heat sources based on certain temperature thresholds.
 - **Motorized flare deployment:** Fires a flare to indicate successful detection of a heat source, using a flywheel and servo-based system.
 - **Data Logging**: Provides detailed logging of system status, sensor data, and actions for debugging and performance monitoring.
