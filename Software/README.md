@@ -28,7 +28,7 @@ The software stack is divided across two platforms:
     pip install numpy
     ```
   - `adafruit-circuitpython-amg88xx`  
-    Install with:  
+    For using amg8833 sensor with RPi.Install with:  
     ```bash
     pip install adafruit-circuitpython-amg88xx
     ```
