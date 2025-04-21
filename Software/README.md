@@ -1,9 +1,9 @@
 # **Thermal Detection and Autonomous Exploration System**
 ## **Overview**
-This repository contains the software framework for a robotic system capable of detecting thermal sources while performing autonomous exploration of an unkown environment. The system is built on ROS2 and meant for deployement on Raspberry Pi. It maps the surroundings using SLAM, detects heat signatures, and deploys a flare mechanism.
+This repository contains the software framework for a robotic system capable of detecting thermal sources while performing autonomous exploration of an unknown environment. The system is built on ROS2 and meant for deployement on Raspberry Pi. It maps the surroundings using SLAM, detects heat signatures, and deploys a flare mechanism.
 
 ## **Key Features**
-- **Autonmous frontier-based exploration:** Uses a frontier exploration algorithm to autnomously navigate towards unexplored regions.
+- **Autonomous frontier-based exploration:** Uses a frontier exploration algorithm to autonomously navigate towards unexplored regions.
 - **Thermal Source Detection:** Detects heat sources based on certain temperature thresholds.
 - **Motorized flare deployment:** Fires a flare to indicate successful detection of a heat source, using a flywheel and servo-based system.
 - **Data Logging**: Provides detailed logging of system status, sensor data, and actions for debugging and performance monitoring.
@@ -71,6 +71,8 @@ rm -rf ~/ros2_ws/src/CDE2310_G11
 rm -rf ~/ros2_ws/src/custom_explorer
 rm -rf ~/ros2_ws/src/robot_config
 ```
+rm comma
+
 3. **Install dependencies and build the workspace:**
 ```bash
 cd ~/ros2_ws
@@ -119,7 +121,7 @@ ros2 run thermal_explorer thermal
 ros2 run fire_flare motor
 ```
 ## **Simulating in Gazebo:**
-To simulate the navigation in a virutal environment, run the following commands in separate terminals:
+To simulate the navigation in a virtual environment, run the following commands in separate terminals:
 1. **Launch the TurtleBot3 in a Gazebo simulation world:**
 ```bash
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
@@ -157,7 +159,7 @@ The system utilizes ROS2 for communication between the various components:
    - /map ([nav_msgs/msg/OccupancyGrid]): The map of the environment for exploration and frontier detection.
 
 ## Testing and Validation
-The system has been tested both in simulated environments (Gazebo) and with real-world harware. The modular nature of the sytem ensures that individual components can be tested in isolation for reliability.
+The system has been tested both in simulated environments (Gazebo) and with real-world hardware. The modular nature of the system ensures that individual components can be tested in isolation for reliability.
 
 The folder **Test** contains verification scripts for hardware-level functionality of the thermal detection and flare deployment system used in the project.
 
