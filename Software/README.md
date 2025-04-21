@@ -21,4 +21,7 @@ This repository contains the software framework for an autonomous robotic system
   - time
   - math
 
+## **Installation and Setup**
+1. Clone the repository:
+
 
