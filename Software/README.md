@@ -15,10 +15,15 @@ The software stack is divided across two platforms:
   - **Raspberry Pi (Onboard Robot):** Handles robot bring-up, thermal sensing, and flare deployment mechanisms.
   
 ## **Prerequisites**
+- Ubuntu 22.04 (recommended)
 - ROS2 Humble
-- Python 3
-- TurtleBot3-compatible hardware (or Gazebo simulation)
 - ROS2 Packages: nav_msgs, geometry_msgs, action_msgs
+- Python 3.10+
+- Python libraries:
+..numpy
+..
+
+
 
 ## **Installation and Setup**
 1. **Create the ROS2 workspace:**
