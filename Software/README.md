@@ -18,7 +18,6 @@ The software stack is divided across two platforms:
 ## **Prerequisites**
 - ROS2 Humble
 - Python 3
-- NumPy Library
 - TurtleBot3-compatible hardware (or Gazebo simulation)
 - ROS2 Packages: nav_msgs, geometry_msgs, action_msgs
 
