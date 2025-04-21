@@ -146,6 +146,11 @@ The system utilizes ROS2 for communication between the various components:
 ## Testing and Validation
 The system has been tested both in simulated environments (Gazebo) and with real-world harware. The modular nature of the sytem ensures that individual components can be tested in isolation for reliability.
 
+## References
+This project was developed with guidance and inspiration from the following sources:
+  - Automatic Addison – ROS 2 Navigation Tuning Guide (Nav2)
+  - AutoFrontierSearch (ROS2 - Humble) – Frontier exploration logic adapted and modified for our use.
+
 
 
  
