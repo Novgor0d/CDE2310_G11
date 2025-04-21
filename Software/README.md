@@ -22,17 +22,26 @@ This repository contains the software framework for an autonomous robotic system
   - math
 
 ## **Installation and Setup**
-1. **Clone the repository:**
+1. **Create the ROS2 workspace:**
 ```bash
-cd ~/ros2_ws/
-git clone https://github.com/Novgor0d/CDE2310_G11.git
+mkdir -p ~/ros2_ws/src
 ```
-2. **Build the ROS2 workspace:**
+2. **Clone the repository:**
+```bash
+cd ~/ros2_ws/src
+git clone https://github.com/Novgor0d/CDE2310_G11.git
+cd CDE2310_G11/software/ros2_ws/src
+cp -r * ~/ros2_ws/src/
+cd ~
+rm -rf CDE2310_G11
+```
+3. **Install dependencies and build the workspace:**
 ```bash
 cd ~/ros2_ws
+rosdep install --from-paths src --ignore-src -r -y
 colcon build
 ```
-3. **Source the workspace:**
+4. **Source the workspace:**
 ```bash
 source install/setup.bash
 ```
