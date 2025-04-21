@@ -1,12 +1,14 @@
 # **Thermal Detection and Autonomous Exploration System**
 ## **Overview**
-This repository contains the software framework for an autonomous robotic system capable of detecting thermal sources while performing autonomous exploration of an unkown environment and firing a flare to signal the detection. The system is built on ROS2 and meant for deployement on Raspberry Pi. 
+This repository contains the software framework for a robotic system capable of detecting thermal sources while performing autonomous exploration of an unkown environment. The system is built on ROS2 and meant for deployement on Raspberry Pi. It maps the surroundings using SLAM, detects hat signature, and deploys a flare mechanism.
 
 ## **Key Features**
 - **Thermal Source Detection:** Detects heat sources based on certain temperature thresholds.
-- **Autonmous Navigation:** Uses a frontier exploration algorithm to autnomously navigate towards unexplored regions.
-- **Action Execution:** Fires a flare to indicate successful detection of a heat source, using a flywheel and servo-based system.
+- **Autonmous frontier-based exploration:** Uses a frontier exploration algorithm to autnomously navigate towards unexplored regions.
+- **Real-time SLAM integration**
+- **Motorized flare deployment:** Fires a flare to indicate successful detection of a heat source, using a flywheel and servo-based system.
 - **Data Logging**: Provides detailed logging of system status, sensor data, and actions for debugging and performance monitoring.
+- **Full ROS2 Humble compatibility**:
 
 ## **Prerequisites**
 - ROS2 Humble (or later)
@@ -28,7 +30,7 @@ mkdir -p ~/ros2_ws/src
 ```
 2. **Clone the repository:**
 
-  (On Laptop)
+  (On remote pc)
 ```bash
 cd ~/ros2_ws/src
 git clone https://github.com/Novgor0d/CDE2310_G11.git
