@@ -1,4 +1,4 @@
-## 🔧 Choice of Components
+##  Choice of Components
 
 ### 1. **AMG8833 Temperature Sensor**
 - Provides an **8×8 grid** of temperature points.
@@ -6,7 +6,7 @@
 - Temperature range: **-20°C to 80°C**.
 - Frame rate: **10 frames/sec**.
 - Has a built-in **ADC**, eliminating the need for an external ADC on the Raspberry Pi.
-- 🛠️ *Chosen for simple and budget-friendly heat detection.*
+-  *Chosen for simple and budget-friendly heat detection.*
 
 ---
 
