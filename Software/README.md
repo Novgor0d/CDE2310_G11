@@ -178,6 +178,7 @@ python3 [file_name].py
 
 ## References
 This project was developed with guidance and inspiration from the following sources:
+  - [Nav2 Documentation](https://docs.nav2.org/)
   - [Automatic Addison – ROS 2 Navigation Tuning Guide (Nav2)](https://automaticaddison.com/ros-2-navigation-tuning-guide-nav2/)
   - [AutoFrontierSearch (ROS2 - Humble)](https://github.com/Nyanziba/AutoFrontierSearch_ros2-humble/tree/main) – Frontier exploration logic adapted and modified for our use.
 
