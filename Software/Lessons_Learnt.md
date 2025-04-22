@@ -44,7 +44,7 @@ Initially, the heat sensor was mounted on a **servo** to perform a **sweeping mo
 
 Our initial strategy relied on **frontier-based exploration**. However, this proved inefficient in the maze we were given, causing the robot to spend excessive time in central regions and **miss heat sources placed near corners**.
 
-**Future Strategy Ideas:**
+**Alternative Strategies:**
 
 - Adopt a **wall-following strategy** for better edge coverage
 - Consider a **hybrid strategy**: prioritize frontiers adjacent to walls
