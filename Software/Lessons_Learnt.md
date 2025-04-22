@@ -1,6 +1,6 @@
 ## Lessons Learnt
 
-### **Nav2 Parameters Test**
+### **Nav2 Parameters**
 
 We should have conducted more testing and fine-tuning of the **Nav2 stack**, particularly in terms of how the **costmap updates in real time**. During our run, the costmap update rate was too slow, which hindered the robot’s ability to quickly react to obstacles and changes in the environment.
 
