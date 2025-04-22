@@ -23,6 +23,11 @@ During the actual run, the **heat sensing logic** had issues where it fired too 
 - Further **calibration in a controlled environment**
 - Test with various **distances and temperatures**
 
+**Alternative Strategies:**
+
+- **Moving average**: Average the temperature over a sliding window of frames to smooth out noise, and trigger flare firing when the temperature exceeds the average by a certain margin.
+- **Peak detection**: Identify sudden temperature increases over a short period (e.g., 1-2 frames) as indicative of a heat source.
+
 This would help achieve more reliable detections and minimize false triggers.
 
 ---
@@ -31,7 +36,7 @@ This would help achieve more reliable detections and minimize false triggers.
 
 Initially, the heat sensor was mounted on a **servo** to perform a **sweeping motion (180°)** to expand detection coverage. While conceptually viable, it introduced several technical issues:
 
-- The servo **frequently fell off**, affecting recorded values
+- The amg sensor **frequently fell off** the servo, affecting recorded values
 - **Constant turning** likely increased **noise in the readings**
 
 ---
