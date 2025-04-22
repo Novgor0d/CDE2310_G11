@@ -20,6 +20,15 @@ The software stack is divided across two platforms:
 - ROS2 Packages: nav_msgs, geometry_msgs, action_msgs
 
   [(Install ROS2 packages and Turtlebot3 here)](https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/#sbc-setup)
+  Add the following line to the '.bashrc' file in the root directory of the Remote PC and RPi
+   ```bash
+   export TURTLEBOT3_MODEL=burger
+    ```
+  Reload the '.bashrc' file
+     ```bash
+   source ~/.bashrc
+    ```
+
 - Python 3.10+
 - Python libraries:
   - `numpy`  
