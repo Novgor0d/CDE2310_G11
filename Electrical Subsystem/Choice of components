@@ -1,3 +1,4 @@
+# Choice of components:
 1) We chose AMG8833 temperature sensor because:
   -Gives an 8x8 grid of temperature points.
   -Has low Power Consumption 
