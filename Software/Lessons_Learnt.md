@@ -16,7 +16,7 @@ These changes could have made the robot more responsive in navigating complex ma
 
 ### **Heat Sensor Calibration**
 
-During the actual run, the **heat sensing logic** had issues where it fired too early or could not detect the heat source. This revealed the need to fine-tune **heat detection thresholds** and the conditions for **triggering flare firing**.
+During the actual run, the **heat sensing logic** had issues where it fired too early or could not detect the heat source **(Threshold Insensitivity)**. This revealed the need to fine-tune **heat detection thresholds** and the conditions for **triggering flare firing**.
 
 **Suggested Action:**
 
