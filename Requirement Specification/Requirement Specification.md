@@ -1,19 +1,19 @@
-# 🎯 IR-Heat Detection & Projectile Launcher System for TurtleBot3 Burger (Raspberry Pi 4)
+#  IR-Heat Detection & Projectile Launcher System for TurtleBot3 Burger (Raspberry Pi 4)
 
-## 📌 Mission Objective
+##  Mission Objective
 
 Design and build an **IR (heat) detection module** with an integrated **projectile launcher** for a **TurtleBot3 Burger** running on **Raspberry Pi 4**, capable of completing the following tasks within a single mission:
 
 ---
 
-## 🚗 Maze Navigation Requirements
+##  Maze Navigation Requirements
 
 1. The TurtleBot must **autonomously navigate a maze** no larger than **5m × 5m**.
 2. Maze walls are under **1 meter** in height.
 
 ---
 
-## 🔥 IR Detection Objectives
+##  IR Detection Objectives
 
 1. Within the maze, the robot must locate a **designated heat signature zone**, marked by an **IR-lamp** in an enclosed area that is **randomly placed**.
 2. The TurtleBot must also identify **three "Target" objects** (biscuit tins), each with an **infrared heat signature ("Hot target")**.
@@ -21,7 +21,7 @@ Design and build an **IR (heat) detection module** with an integrated **projecti
 
 ---
 
-## 🚀 Launching Requirements
+##  Launching Requirements
 
 - The robot must:
   - **Detect** the hot target.
@@ -32,7 +32,7 @@ Design and build an **IR (heat) detection module** with an integrated **projecti
 
 ---
 
-## 📋 Conditions & Constraints
+##  Conditions & Constraints
 
 1. All targets are placed **on the floor**.
 2. There is **only one elevation zone** (non-critical) located in the **bonus zone**.
