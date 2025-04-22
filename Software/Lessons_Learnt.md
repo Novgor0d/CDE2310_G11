@@ -23,7 +23,7 @@ During the actual run, the **heat sensing logic** had issues where it fired too 
 - Further **calibration in a controlled environment**
 - Test with various **distances and temperatures**
 
-**Alternative Strategies:**
+**Alternative Strategy:**
 
 - **Moving average**: Average the temperature over a sliding window of frames to smooth out noise, and trigger flare firing when the temperature exceeds the average by a certain margin.
 
