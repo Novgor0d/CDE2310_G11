@@ -30,6 +30,9 @@ The software stack is divided across two platforms:
    source ~/.bashrc
     ```
 
+-Gazebo Classic (optional)
+[(Install Gazebo from here)[https://gazebosim.org/docs/latest/ros_installation/]
+
 - Python 3.10+
 - Python libraries:
   - `numpy`  
