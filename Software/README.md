@@ -32,7 +32,7 @@ The software stack is divided across two platforms:
 
 - Gazebo Classic (optional)
 
-[(Install Gazebo from here)](https://gazebosim.org/docs/latest/ros_installation/)
+  [(Install Gazebo from here)](https://gazebosim.org/docs/latest/ros_installation/)
 
 - Python 3.10+
 - Python libraries:
