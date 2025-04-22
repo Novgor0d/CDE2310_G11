@@ -26,7 +26,6 @@ During the actual run, the **heat sensing logic** had issues where it fired too 
 **Alternative Strategies:**
 
 - **Moving average**: Average the temperature over a sliding window of frames to smooth out noise, and trigger flare firing when the temperature exceeds the average by a certain margin.
-- **Peak detection**: Identify sudden temperature increases over a short period (e.g., 1-2 frames) as indicative of a heat source.
 
 This would help achieve more reliable detections and minimize false triggers.
 
