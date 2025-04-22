@@ -63,6 +63,7 @@ cp -r * ~/ros2_ws/src/
 rm -rf ~/ros2_ws/src/CDE2310_G11
 # Copy the 'src' directory from the local machine's ros2_ws to the Raspberry Pi's ros2_ws/src directory
 scp -r ~/ros2_ws/src pi@rpi_ip_address:/home/pi/ros2_ws/src
+# Replace the username and ip address with your RPi's
 rm -rf ~/ros2_ws/src/thermal_explorer
 rm -rf ~/ros2_ws/src/fire_flare
 ```
