@@ -153,11 +153,11 @@ The system utilizes ROS2 for communication between the various components:
 ## Testing and Validation
 The system has been tested both in simulated environments (Gazebo) and with real-world hardware. The modular nature of the system ensures that individual components can be tested in isolation for reliability.
 
-The folder **Test** contains verification scripts for hardware-level functionality of the thermal detection and flare deployment system used in the project.
+The folder **/Test** contains verification scripts for hardware-level functionality of the thermal detection and flare deployment system used in the project.
 
 ### **Contents**
 
-**thermal_test.py**
+**AMG8833_test.py**
 - Sweeps a servo across predefined angles.
 - Uses the AMG8833 thermal camera to detect heat signatures above a defined threshold.
 - if a high heat count is detected, triggers a flare firing sequence by executing Motor_Test.py
