@@ -1,4 +1,4 @@
-## Lessons Learnt (Software)
+## Lessons Learnt
 
 ### Nav2 Parameters Test
 
