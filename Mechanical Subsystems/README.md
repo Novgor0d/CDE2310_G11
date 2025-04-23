@@ -1,12 +1,11 @@
 ## Mechanical Subsystem
-_All the items that have been mentioned in this document refer directly to the file name._
+
+This document outlines the **complete design, fabrication, and assembly process** for our autonomous ping pong ball launcher mounted on the TurtleBot3 Burger. The system is designed to detect a heat source, navigate autonomously, and fire a ping pong ball vertically using a dual-flywheel launch mechanism. It includes detailed breakdowns of parts, fabrication methods, performance calculations, and step-by-step assembly instructions to ensure clarity and reproducibility.
+
+**_All the items that have been mentioned in this document refer directly to the file name._**
 
 
-## Files and their description
-
-**Turtlebot Assembly files:**
-- Turtlebot Assembly:- Base turtlebot burger
-- Turtlebot & Launcher Mechanism Assembly: Final Turtlebot Burger assembly with the launcher and the ball feeder system.
+## Files and their description under Mechananical Subsystems
 
 **Reload Tube Folder:**
 - Joint2: attatches 18cm pipe to the launcher 
@@ -29,7 +28,11 @@ _All the items that have been mentioned in this document refer directly to the f
 - flywheel - File has the flywheel plus the gear (12 teeth) 
 - launcher + reload tubes assem  
 - launcher  
-- pinion gear (rack and pinion)  
+- pinion gear (rack and pinion)
+
+**Turtlebot Assembly files:**
+- Turtlebot Assembly:- Base turtlebot burger
+- Turtlebot & Launcher Mechanism Assembly: Final Turtlebot Burger assembly with the launcher and the ball feeder system.
 
 
 
