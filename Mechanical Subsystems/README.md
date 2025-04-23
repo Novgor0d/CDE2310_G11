@@ -21,7 +21,7 @@ All the items that have been mentioned in this document refer directly to the fi
 - DC motor gear: 30 teeth 
 - JGB37-520 left assem: assembly file with motor
 - JGB37-520 left bracket  
-- JGB37-520 right assem: assembly filw with motor  
+- JGB37-520 right assem: assembly file with motor  
 - JGB37-520 right bracket  
 - SG90 servo assem (rack and pinion)  
 - SG90 servo bracket (rack and pinion)  
