@@ -65,17 +65,17 @@ _Parts to be Laser cut:_
 
 ## Assembly Plan
 
-**1. Assembly Step: SG90 Servo + Heat Sensor Mounting**
+**1. Assembly Step 1: SG90 Servo + Heat Sensor Mounting**
 - Mount the SG90 servo to the front of the second level using M4×15 screws.
 - Attach the sensor bracket to the servo horn using M2×10 screws.
 - Fix the AMG8833 heat sensor onto the bracket using M2×10 screws.
 
-**2.  Assembly Step: Mount Pinion and Attach Servo Platform**
+**2.  Assembly Step 2: Mount Pinion and Attach Servo Platform**
 - Attach the pinion gear to the output shaft of the SG90 servo.
 - Mount the servo onto the platform bracket using M2×15 screws.
 - Fix the entire servo and motor platform onto the top layer using M3×15 screws through the holes aligned with the hex standoffs.
 
-**3. Assembly Step: Mount Flywheel Launcher Assembly**
+**3. Assembly Step 3: Mount Flywheel Launcher Assembly**
 - Mount the JGB37-520 motors onto the launcher platform using M2×15 and M4×15 screws.
 - Attach the 30-tooth motor gear to the motor shaft.
 - Slide the 3D printed shaft through the flywheel and secure it so the 12-tooth flywheel gear meshes precisely with the motor gear (gear ratio 30:12).
@@ -83,7 +83,7 @@ _Parts to be Laser cut:_
 - Extend the third platform layer by attaching M3×20 hex standoffs to the existing mounting holes.
 - Secure the entire launcher assembly onto the TurtleBot chassis using M4X15 and M3X15 screws through the designated mounting holes, aligning the pinion (29T) on the servo with the rack (15T) for accurate engagement.
 
-**4. Assembly Step: Ball Feeder Pipe Installation**
+**4. Assembly Step 4: Ball Feeder Pipe Installation**
 - Mount the pipe support bracket to the TurtleBot platform using M2×20 screws.
 - Press-fit the 15 cm PVC pipe into the 3D printed 90° elbow joint.
 - Connect the 15 cm pipe to the 18 cm PVC pipe using the same elbow joint.
