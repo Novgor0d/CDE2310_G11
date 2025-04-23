@@ -65,31 +65,63 @@ _Parts to be Laser cut:_
 
 ## Assembly Plan
 
-**1. Assembly Step 1: SG90 Servo + Heat Sensor Mounting**
+**Assembly Step 1: SG90 Servo + Heat Sensor Mounting**
 - Mount the SG90 servo to the front of the second level using M4×15 screws.
 - Attach the sensor bracket to the servo horn using M2×10 screws.
 - Fix the AMG8833 heat sensor onto the bracket using M2×10 screws.
 
-**2.  Assembly Step 2: Mount Pinion and Attach Servo Platform**
+**Assembly Step 2: Mount Pinion and Attach Servo Platform**
 - Attach the pinion gear to the output shaft of the SG90 servo.
 - Mount the servo onto the platform bracket using M2×15 screws.
 - Fix the entire servo and motor platform onto the top layer using M3×15 screws through the holes aligned with the hex standoffs.
 
-**3. Assembly Step 3: Mount Flywheel Launcher Assembly**
+**Assembly Step 3: Mount Flywheel Launcher Assembly**
 - Mount the JGB37-520 motors onto the launcher platform using M2×15 and M4×15 screws.
 - Attach the 30-tooth motor gear to the motor shaft.
+- Wrap the flywheel with 8 rubber bands each to increase friction.
 - Slide the 3D printed shaft through the flywheel and secure it so the 12-tooth flywheel gear meshes precisely with the motor gear (gear ratio 30:12).
 - Insert the ball holder platform from above
 - Extend the third platform layer by attaching M3×20 hex standoffs to the existing mounting holes.
 - Secure the entire launcher assembly onto the TurtleBot chassis using M4X15 and M3X15 screws through the designated mounting holes, aligning the pinion (29T) on the servo with the rack (15T) for accurate engagement.
 
-**4. Assembly Step 4: Ball Feeder Pipe Installation**
+**Assembly Step 4: Ball Feeder Pipe Installation**
 - Mount the pipe support bracket to the TurtleBot platform using M2×20 screws.
 - Press-fit the 15 cm PVC pipe into the 3D printed 90° elbow joint.
 - Connect the 15 cm pipe to the 18 cm PVC pipe using the same elbow joint.
 - Press-fit the other end of the 18 cm pipe into the 3D printed joint2,
 - Press-fit joint2 onto the launcher housing and finally, rest the assembled tube system onto the tube holder.
 
+
+
+## Launcher Calculations 
+
+**Specifications & Assumptions:**
+- Mass of Ping Pong Ball: 2.7 g (0.0027 kg)
+- Target Launch Height: 1.5 m
+- Flywheel Diameter: 5 cm (0.025 m radius)
+- Motor Used: JGB37-520 (nominal no-load speed ~960 RPM)
+- Gear Ratio: 30:12 (2.5× step-up)
+
+**Required Launch Velocity:**
+v = √(2gh) = √(2 × 9.81 × 1.5) ≈ 5.42 m/s
+
+**Required Flywheel RPM:**
+ω = v / r = 5.42 / 0.025 = 216.8 rad/s
+RPM = (216.8 × 60) / (2π) ≈ 2072 RPM
+
+**Achieved Flywheel RPM:**
+With gear ratio of 2.5× (30 teeth : 12 teeth):
+Achieved RPM = 960 × 2.5 = 2400 RPM
+
+Our flywheel system achieves an RPM of 2400, which exceeds the required 2072 RPM. This confirms our system can successfully launch the ping pong ball to at least 1.5 meters vertically, satisfying the project requirements with a performance buffer (accounting for air resistance and energy loss through friction)
+
+
+
+## Mechanical and Assembly Recommendations
+- Ensure motor shafts and flywheels are securely fastened to prevent slippage at high RPMs.
+- Align gears and flywheels properly to minimize vibration during operation.
+- Test with gradual motor ramp-up to check for imbalance or resonance.
+- Ensure the PVC ball guide path has minimal friction and doesn’t interfere with launch direction.
 
 
 
