@@ -1,5 +1,5 @@
 ## Mechanical Subsystem
-All the items that have been mentioned in this document refer directly to the file name.
+_All the items that have been mentioned in this document refer directly to the file name._
 
 
 ## Files and their description
