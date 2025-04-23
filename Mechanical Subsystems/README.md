@@ -48,7 +48,7 @@ CAD files can be saved as STL files to 3D Print.
 - Joint 2
 - Joint
 - Tubes Holder
-- 2X Flywheel
+- 2X Flywheel (with integrated gear teeth)
 - SG90 servo Bracket (heat sensor)
 
 **Specifications for 3D Printing:**
@@ -81,7 +81,7 @@ _Parts to be Laser cut:_
 **Assembly Step 3: Mount Flywheel Launcher Assembly**
 - Mount the JGB37-520 motors onto the launcher platform using M2×15 and M4×15 screws.
 - Attach the 30-tooth motor gear to the motor shaft.
-- Wrap the flywheel with 8 rubber bands each to increase friction.
+- Wrap each flywheel with 8 rubber bands each to improve traction.
 - Slide the 3D printed shaft through the flywheel and secure it so the 12-tooth flywheel gear meshes precisely with the motor gear (gear ratio 30:12).
 - Insert the ball holder platform from above
 - Extend the third platform layer by attaching M3×20 hex standoffs to the existing mounting holes.
@@ -114,9 +114,9 @@ RPM = (216.8 × 60) / (2π) ≈ 2072 RPM
 
 **Achieved Flywheel RPM:**
 With gear ratio of 2.5× (30 teeth : 12 teeth):
-Achieved RPM = 960 × 2.5 = 2400 RPM
+Achieved RPM = 960 RPM (motor) × 2.5 (gear ratio) = 2400 RPM
 
-Our flywheel system achieves an RPM of 2400, which exceeds the required 2072 RPM. This confirms our system can successfully launch the ping pong ball to at least 1.5 meters vertically, satisfying the project requirements with a performance buffer (accounting for air resistance and energy loss through friction)
+Our flywheel system achieves an RPM of 2400, which exceeds the required 2072 RPM. This confirms our system can successfully launch the ping pong ball to at least 1.5 meters vertically, satisfying the project requirements  with a performance buffer that accounts for real-world factors such as air resistance and energy losses from friction.
 
 
 
