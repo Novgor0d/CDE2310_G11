@@ -2,13 +2,13 @@
 All the items that have been mentioned in this document refer directly to the file name.
 
 
-Files and their description:
+## Files and their description
 
-Turtlebot Assembly files:
+**Turtlebot Assembly files:**
 - Turtlebot Assembly:- Base turtlebot burger
 - Turtlebot & Launcher Mechanism Assembly: Final Turtlebot Burger assembly with the launcher and the ball feeder system.
 
-Reload Tube Folder:
+**Reload Tube Folder:**
 - Joint2: attatches 18cm pipe to the launcher 
 - Joint: attatches 15cm pipe to the 18cm pipe 
 - Reload Tubes assem: the entire assembly file with pipes and joints
@@ -16,7 +16,7 @@ Reload Tube Folder:
 - Tube 15cm
 - Tubes holder: Attaches to turtlebot for holding the 18cm tube 
 
-Launcher Folder:
+**Launcher Folder:**
 - DC motor & servo platform: Attaches DC motors and servo to the turtlebot 
 - DC motor gear: 30 teeth 
 - JGB37-520 left assem: assembly file with motor
