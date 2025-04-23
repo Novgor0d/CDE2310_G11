@@ -36,7 +36,7 @@ All the items that have been mentioned in this document refer directly to the fi
 ## 3D Printing
 CAD files can be saved as STL files to 3D Print.
 
-_Parts to be printed:_
+**Parts to be printed:**
 - Launcher 
 - JGB37-520 left bracket
 - JGB37-520 right bracket  
@@ -48,7 +48,7 @@ _Parts to be printed:_
 - 2X Flywheel
 - SG90 servo Bracket (heat sensor)
 
-_Specifications for 3D Printing:_
+**Specifications for 3D Printing:**
 - Infill: 15%
 - Material: PLA 
 
@@ -60,4 +60,40 @@ _Parts to be Laser cut:_
 - 2X DC Motor gear 
 - Pinion Gear 
 - DC Motor and Servo Platform
+
+
+
+## Assembly Plan
+
+**1. Assembly Step: SG90 Servo + Heat Sensor Mounting**
+- Mount the SG90 servo to the front of the second level using M4×15 screws.
+- Attach the sensor bracket to the servo horn using M2×10 screws.
+- Fix the AMG8833 heat sensor onto the bracket using M2×10 screws.
+
+**2.  Assembly Step: Mount Pinion and Attach Servo Platform**
+- Attach the pinion gear to the output shaft of the SG90 servo.
+- Mount the servo onto the platform bracket using M2×15 screws.
+- Fix the entire servo and motor platform onto the top layer using M3×15 screws through the holes aligned with the hex standoffs.
+
+**3. Assembly Step: Mount Flywheel Launcher Assembly**
+- Mount the JGB37-520 motors onto the launcher platform using M2×15 and M4×15 screws.
+- Attach the 30-tooth motor gear to the motor shaft.
+- Slide the 3D printed shaft through the flywheel and secure it so the 12-tooth flywheel gear meshes precisely with the motor gear (gear ratio 30:12).
+- Insert the ball holder platform from above
+- Extend the third platform layer by attaching M3×20 hex standoffs to the existing mounting holes.
+- Secure the entire launcher assembly onto the TurtleBot chassis using M4X15 and M3X15 screws through the designated mounting holes, aligning the pinion (29T) on the servo with the rack (15T) for accurate engagement.
+
+**4. Assembly Step: Ball Feeder Pipe Installation**
+- Mount the pipe support bracket to the TurtleBot platform using M2×20 screws.
+- Press-fit the 15 cm PVC pipe into the 3D printed 90° elbow joint.
+- Connect the 15 cm pipe to the 18 cm PVC pipe using the same elbow joint.
+- Press-fit the other end of the 18 cm pipe into the 3D printed joint2,
+- Press-fit joint2 onto the launcher housing and finally, rest the assembled tube system onto the tube holder.
+
+
+
+
+
+
+
 
