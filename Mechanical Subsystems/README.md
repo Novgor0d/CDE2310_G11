@@ -28,7 +28,7 @@ This document outlines the **complete design, fabrication, and assembly process*
 - flywheel - File has the flywheel plus the gear (12 teeth) 
 - launcher + reload tubes assem  
 - launcher  
-- pinion gear (rack and pinion)
+- pinion gear (rack and pinion): 29 teeth
 
 **Turtlebot Assembly files:**
 - Turtlebot Assembly:- Base turtlebot burger
@@ -82,7 +82,7 @@ _Parts to be Laser cut:_
 - Mount the JGB37-520 motors onto the launcher platform using M2×15 and M4×15 screws.
 - Attach the 30-tooth motor gear to the motor shaft.
 - Wrap each flywheel with 8 rubber bands each to improve traction.
-- Slide the 3D printed shaft through the flywheel and secure it so the 12-tooth flywheel gear meshes precisely with the motor gear (gear ratio 30:12).
+- Slide the 3D printed shaft through the flywheel and secure it so the 12-tooth flywheel gear meshes precisely with the motor gear (gear ratio 5:2).
 - Insert the ball holder platform from above
 - Extend the third platform layer by attaching M3×20 hex standoffs to the existing mounting holes.
 - Secure the entire launcher assembly onto the TurtleBot chassis using M4X15 and M3X15 screws through the designated mounting holes, aligning the pinion (29T) on the servo with the rack (15T) for accurate engagement.
